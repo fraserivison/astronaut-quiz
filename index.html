@@ -14,18 +14,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-logo/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>So You Want To Be An Astronaut?</title>
+    <title>So, You Want To Be An Astronaut?</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome fellow stargazer!</h1>
-         <p>Before we embark on this journey, please tell us your name:</p>
-          <form id="name">
-            <input type="text" id="username" placeholder="Enter your first name here" required>
-            <button type="submit">Let's go!</button>
+    <!-- Landing page -->
+        <div class="splash-container">
+        <div class="splash-content" id="splash-content">
+          <h1>Welcome fellow stargazer!</h1>
+          <p>Before we embark on this journey, please tell us your name:</p>
+          <form id="name-form">
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <button type="submit">To infinity and beyond!</button>
           </form>
+        </div>
+    
+    <!-- Main content -->
+    <main>
+        <div class="main-content" id="main-content">
+        <h1>So, you want to be an Astronaut?</h1>
+        <p><span id="user-greeting"></span>,we're thrilled to have you join us on this exhilarating journey of exploration and discovery. As you step into this virtual space, you're about to embark on a remarkable adventure to uncover if you possess the qualities and determination required to reach for the stars. Get ready to dive into the challenges, tests, and simulations that will push your limits and reveal the essence of what it takes to become an astronaut. Whether you're a seasoned space enthusiast or just beginning to dream of the cosmos, prepare to be inspired and tested like never before. Let the adventure begin!</p>
     </div>
+    </main>
     
     <script src="assets/js/script.js"></script>
 </body>

@@ -113,21 +113,26 @@ function selectAnswer(e) {
 }
 
 showQuestion();
-function showResult(userName) {
-    let resultText, linkText;
+function showResult(username) {
+    let resultText, linkText, userName;
+
+    userName = localStorage.getItem("username");
     
     if (score >= 7) {
-        resultText = `Congratulations <span class="user-greeting">${userName}</span>, you've got what it takes to be an astronaut!`;
+        resultText = `Congratulations <span class="userGreeting">${userName}</span>, you've got what it takes to be an astronaut!`;
         linkText = "Apply Now"; // Text for the link
+        linkHref = "apply.html"; // Redirect to the home section of the same page
     } else {
-        resultText = `Sorry <span class="user-greeting">${userName}</span>, not this time, but try again soon.`;
+        resultText = `Sorry <span class="userGreeting">${userName}</span>, not this time, but try again soon.`;
         linkText = "Back to Home"; // Text for the link
+        linkHref = "#home";
     }
 
     quiz.innerHTML = `
                 <h1>Quiz Completed!</h1>
                 <p>Score: ${score}/${spaceQuiz.length}</p>
                 <p>${resultText}</p>
-                <a href="${score >= 7 ? 'apply.html' : 'index.html'}">${linkText}</a>
+                <a href="${linkHref}">${linkText}</a>
             `;
+
 }

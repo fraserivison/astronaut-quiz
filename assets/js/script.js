@@ -113,12 +113,21 @@ function selectAnswer(e) {
 }
 
 showQuestion();
-function showResult() {
-    let resultText = (score >= 7) ? "Congratulations ${score}, you've got what it takes to be an astronaut!" : "Sorry champ, not this time, but try again soon!";
+function showResult(userName) {
+    let resultText, linkText;
+    
+    if (score >= 7) {
+        resultText = `Congratulations <span class="user-greeting">${userName}</span>, you've got what it takes to be an astronaut!`;
+        linkText = "Apply Now"; // Text for the link
+    } else {
+        resultText = `Sorry <span class="user-greeting">${userName}</span>, not this time, but try again soon.`;
+        linkText = "Back to Home"; // Text for the link
+    }
+
     quiz.innerHTML = `
                 <h1>Quiz Completed!</h1>
                 <p>Score: ${score}/${spaceQuiz.length}</p>
                 <p>${resultText}</p>
-                <a href="index.html">Back to Home</a>
+                <a href="${score >= 7 ? 'apply.html' : 'index.html'}">${linkText}</a>
             `;
 }

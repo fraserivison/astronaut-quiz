@@ -47,6 +47,19 @@ Main fonts:
 
 
 ## Features
+Splash Page to gain users name to perosnal touch and then name is used throughout website
+
+Nav bar to jumps to h2 elements and it also stays on the screen- maybe gets larger when hovered over?
+
+Intro
+
+Fun facts
+
+History
+
+Hall of Fame
+
+Quiz
 
 ### Quiz
 

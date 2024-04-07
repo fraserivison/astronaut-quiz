@@ -1,5 +1,6 @@
 // Splash Page
-document.getElementById("name-form").addEventListener("submit", function (event) {
+
+document.getElementById("name").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
 
     let userName = document.getElementById("username").value;
@@ -18,3 +19,19 @@ document.getElementById("name-form").addEventListener("submit", function (event)
     }
 
 });
+
+// Quiz
+const quizData = [
+    {
+        question: "What is the capital of France?",
+        options: ["Paris", "Madrid", "Rome", "Berlin"],
+        answer: "Paris"
+    },
+    {
+        question: "What is the largest planet in our solar system?",
+        options: ["Jupiter", "Saturn", "Mars", "Earth"],
+        answer: "Jupiter"
+    },
+
+
+];

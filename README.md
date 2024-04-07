@@ -117,6 +117,7 @@ A specialised quiz designed to assess users' suitability for space missions, cov
 
 ## Credits
 
+Space facts: https://www.buzzfeed.com/audreyworboys/space-facts
 
 ### Content:
 

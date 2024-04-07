@@ -4,18 +4,18 @@
 if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
     document.getElementById("name").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
-    
+
         let userName = document.getElementById("username").value;
-    
+
         // Store the username in localStorage for future use, MAYBE DELETE
         localStorage.setItem("username", userName);
-    
+
         // Hide the splash content and show the main content
         document.getElementById("splash-content").style.display = "none";
         document.getElementById("main-content").style.display = "block";
-    
+
         // Display the username in the when called upon
-        let userGreetings = document.getElementsByClassName("user-greeting");
+        let userGreetings = document.getElementsByClassName("userGreeting");
         for (let i = 0; i < userGreetings.length; i++) {
             userGreetings[i].textContent = userName;
         }
@@ -76,47 +76,49 @@ const spaceQuiz = [
 ];
 
 const questionElement = document.getElementById("question");
-        const optionsElement = document.getElementById("options");
-        const submitButton = document.getElementById("submit");
-        
-        let currentQuestion = 0;
-        let score = 0;
-        
-        function showQuestion() {
-            const question = spaceQuiz[currentQuestion];
-            questionElement.innerText = question.question;
-        
-            optionsElement.innerHTML = "";
-            question.options.forEach(option => {
-            const button = document.createElement("button");
-            button.innerText = option;
-            optionsElement.appendChild(button);
-            button.addEventListener("click", selectAnswer);
-            });
-        }
-        
-        function selectAnswer(e) {
-            const selectedButton = e.target;
-            const answer = spaceQuiz[currentQuestion].answer;
-        
-            if (selectedButton.innerText === answer) {
-            score++;
-            }
-        
-            currentQuestion++;
-        
-            if (currentQuestion < spaceQuiz.length) {
-            showQuestion();
-            } else {
-            showResult();
-            }
-        }
-        
-        function showResult() {
-            quiz.innerHTML = `
-            <h1>Quiz Completed!</h1>
-            <p>Your score: ${score}/${spaceQuiz.length}</p>
-            `;
-        }
-        
+const optionsElement = document.getElementById("options");
+const submitButton = document.getElementById("submit");
+
+let currentQuestion = 0;
+let score = 0;
+
+function showQuestion() {
+    const question = spaceQuiz[currentQuestion];
+    questionElement.innerText = question.question;
+
+    optionsElement.innerHTML = "";
+    question.options.forEach(option => {
+        const button = document.createElement("button");
+        button.innerText = option;
+        optionsElement.appendChild(button);
+        button.addEventListener("click", selectAnswer);
+    });
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const answer = spaceQuiz[currentQuestion].answer;
+
+    if (selectedButton.innerText === answer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < spaceQuiz.length) {
         showQuestion();
+    } else {
+        showResult();
+    }
+}
+
+showQuestion();
+function showResult() {
+    let resultText = (score >= 7) ? "Congratulations ${score}, you've got what it takes to be an astronaut!" : "Sorry champ, not this time, but try again soon!";
+    quiz.innerHTML = `
+                <h1>Quiz Completed!</h1>
+                <p>Score: ${score}/${spaceQuiz.length}</p>
+                <p>${resultText}</p>
+                <a href="index.html">Back to Home</a>
+            `;
+}

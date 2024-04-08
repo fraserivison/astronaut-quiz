@@ -51,19 +51,17 @@ Splash Page to gain users name to perosnal touch and then name is used throughou
 
 Nav bar to jumps to h2 elements and it also stays on the screen- maybe gets larger when hovered over?
 
-Intro
+### Intro
 
-Fun facts
+### Fun facts
 
-History
+### History
 
-Hall of Fame
-
-Quiz
+### Hall of Fame
 
 ### Quiz
 
-A specialised quiz designed to assess users' suitability for space missions, covering areas such as problem-solving, teamwork, adaptability, and scientific knowledge.
+
 
 
 ## Features Left to Implement

@@ -1,26 +1,23 @@
-// Splash Page
-
-// Check if the current page is index.html before attaching the event listener
 if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
     document.getElementById("name").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
 
         let userName = document.getElementById("username").value;
 
-        // Store the username in localStorage for future use, MAYBE DELETE
+        // Store the username in localStorage for future use
         localStorage.setItem("username", userName);
 
-        // Hide the splash content and show the main content
-        document.getElementById("splash-content").style.display = "none";
-        document.getElementById("main-content").style.display = "block";
+        // Redirect to home.html
+        window.location.href = "home.html";
+    });
+}
 
         // Display the username in the when called upon
         let userGreetings = document.getElementsByClassName("userGreeting");
         for (let i = 0; i < userGreetings.length; i++) {
             userGreetings[i].textContent = userName;
         }
-    });
-}
+        
 // Quiz
 const spaceQuiz = [
     {
@@ -117,6 +114,7 @@ function showResult(username) {
     let resultText, linkText, userName;
 
     userName = localStorage.getItem("username");
+
     
     if (score >= 7) {
         resultText = `Congratulations <span class="userGreeting">${userName}</span>, you've got what it takes to be an astronaut!`;
@@ -125,7 +123,7 @@ function showResult(username) {
     } else {
         resultText = `Sorry <span class="userGreeting">${userName}</span>, not this time, but try again soon.`;
         linkText = "Back to Home"; // Text for the link
-        linkHref = "#home";
+        linkHref = "home.html";
     }
 
     quiz.innerHTML = `

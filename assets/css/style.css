@@ -2,16 +2,14 @@ body {
     background-color: lightblue;
 }
 
-.splash-container {
+#welcome-container {
     text-align: center;
   }
   
-  .splash-content {
+  #welcome-content {
     display: block;
   }
   
-  .main-content {
-    display: none;
-  }
+ 
 
   

@@ -9,15 +9,19 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 
         // Redirect to home.html
         window.location.href = "home.html";
+
     });
 }
 
-        // Display the username in the when called upon
-        let userGreetings = document.getElementsByClassName("userGreeting");
-        for (let i = 0; i < userGreetings.length; i++) {
-            userGreetings[i].textContent = userName;
-        }
-        
+// Retrieve the username from local storage
+let username = localStorage.getItem("username");
+
+// Set the username as the text content of the span element
+let usernameElements = document.querySelectorAll(".username");
+usernameElements.forEach(element => {
+    element.textContent = username;
+});
+
 // Quiz
 const spaceQuiz = [
     {

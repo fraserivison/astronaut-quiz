@@ -61,11 +61,12 @@ Nav bar to jumps to h2 elements and it also stays on the screen- maybe gets larg
 
 ### Quiz
 
-
+Will redirect to 'application page' upon success of the quiz or back to home page to read up on information again.
 
 
 ## Features Left to Implement
-
+Timeline of history of universe
+Current location of ISS, hubble and james webb telescope 
 
 ## Technologies Used
 
@@ -115,9 +116,10 @@ Nav bar to jumps to h2 elements and it also stays on the screen- maybe gets larg
 
 ## Credits
 
-Space facts: https://www.buzzfeed.com/audreyworboys/space-facts
-
 ### Content:
+Info is taken from chat gpt
+
+Space facts directly from: https://www.buzzfeed.com/audreyworboys/space-facts
 
 
 ### Media:
@@ -128,7 +130,8 @@ Favicon in tab (https://favicon.io/emoji-favicons/rocket/)
 
 
 ### Code
-
+[404.html Template](<!-- code from https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/ -->
+)
 
 ### Styling and Media 
 

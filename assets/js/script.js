@@ -119,9 +119,9 @@ function showResult(username) {
 
     userName = localStorage.getItem("username");
 
-    
+
     if (score >= 7) {
-        resultText = `Congratulations <span class="userGreeting">${userName}</span>, you've got what it takes to be an astronaut!`;
+        resultText = `Congratulations <span class="userGreeting">${userName}</span>, you've got what it takes to become an astronaut!`;
         linkText = "Apply Now"; // Text for the link
         linkHref = "apply.html"; // Redirect to the home section of the same page
     } else {

@@ -2,14 +2,14 @@ body {
     background-color: lightblue;
 }
 
-#welcome-container {
+.welcome-container {
     text-align: center;
   }
   
-  #welcome-content {
+  .welcome-content {
     display: block;
   }
   
  
-
+    
   

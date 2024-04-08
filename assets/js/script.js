@@ -59,6 +59,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+
 // quiz.html
 const spaceQuiz = [
     {

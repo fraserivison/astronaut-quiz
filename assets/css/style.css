@@ -108,7 +108,7 @@ h3 {
   font-family: 'Space Mono', monospace;
 }
 
-p {
+p, li {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -130,6 +130,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   font-family: 'Space Mono', monospace;
+  text-align: center; /* Center align all elements */
 }
 
 nav li {
@@ -142,6 +143,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Space Mono', monospace;
 }
 
 nav li a:hover {
@@ -155,13 +157,17 @@ nav li a:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   nav li a {
     font-size: 10px; /* Adjust font size for smaller screens */
     padding: 8px; /* Adjust padding for smaller screens */
   }
 }
 
+/* Ensure navbar sits above h1 */
+h1#home {
+  margin-top: 70px; /* Adjust the margin-top value as needed */
+}
 
 /* Quiz */
 

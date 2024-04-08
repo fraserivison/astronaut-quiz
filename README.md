@@ -130,8 +130,9 @@ Favicon in tab (https://favicon.io/emoji-favicons/rocket/)
 
 
 ### Code
-[404.html Template](<!-- code from https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/ -->
-)
+[404.html Template](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
+
+[Space Background on index.html and quiz.html](https://codepen.io/wheresdara/pen/wvXBpwa)
 
 ### Styling and Media 
 

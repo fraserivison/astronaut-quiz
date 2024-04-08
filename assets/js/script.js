@@ -10,7 +10,7 @@ for (let i = 0; i < STAR_COUNT; i++) {
 }
 console.log(result.substring(0, result.length - 1))
 
-// Index.html Welcome Section
+// index.html
 if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
     document.getElementById("name").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
@@ -44,7 +44,22 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
     });
 }
 
-// Quiz Section
+// home.html
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop - 50, // Adjusted offset for the fixed navbar
+            behavior: 'smooth'
+        });
+    });
+});
+
+// quiz.html
 const spaceQuiz = [
     {
         question: "What is the name of the closest star to Earth?",

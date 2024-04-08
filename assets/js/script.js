@@ -29,11 +29,20 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 // Retrieve the username from local storage
 let username = localStorage.getItem("username");
 
+
 // Set the username as the text content of the span element
 let usernameElements = document.querySelectorAll(".username");
 usernameElements.forEach(element => {
     element.textContent = username;
 });
+
+// Apply specific styles to .username only on index.html
+if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    document.querySelectorAll(".username").forEach(element => {
+        element.style.border = "2px solid #fff";
+        element.style.padding = "10px";
+    });
+}
 
 // Quiz Section
 const spaceQuiz = [

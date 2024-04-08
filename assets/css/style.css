@@ -1,4 +1,4 @@
-.space-body {
+.space-body, body {
   background-color: #000;
   color: white;
 }
@@ -33,13 +33,11 @@
   height: 100vh; /* Makes the container full height of the viewport */
 }
 
-.welcome-content {
-  text-align: center;
-}
-
 .welcome-content h1 {
   color: #fff; /* White text color */
   font-size: 36px; /* Adjust font size as needed */
+  text-align: center;
+
 }
 
 .welcome-content p {
@@ -47,8 +45,9 @@
   font-size: 18px; /* Adjust font size as needed */
   margin-bottom: 20px; /* Add some space below the paragraph */
 }
-
-.username {
+button,
+input,
+button[type="submit"] {
   padding: 10px;
   margin-bottom: 10px;
   border: 2px solid #fff; /* White border */
@@ -59,22 +58,62 @@
   border-radius: 5px; /* Add some border radius for style */
 }
 
-.username::placeholder {
+input::placeholder {
   color: #fff; /* White placeholder text color */
   opacity: 0.7; /* Adjust the opacity of the placeholder */
 }
 
+button,
 button[type="submit"] {
-  padding: 10px 20px;
   background-color: #fff; /* White background color */
   color: #000; /* Black text color */
   border: none;
-  font-size: 16px; /* Adjust font size as needed */
   cursor: pointer;
   border-radius: 5px; /* Add some border radius for style */
   transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
 }
 
+button,
 button[type="submit"]:hover {
-  background-color: #ddd; /* Darken the background color on hover */
+  background-color: #a8a2a2; /* Darken the background color on hover */
+}
+
+#quiz {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1, h2 {
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#question {
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
 }

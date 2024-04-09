@@ -2,19 +2,18 @@
 body {
   background-color: #000;
   color: white;
-  margin: 0 20px;
   text-align: justify;
   text-justify: inter-word;
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  h1, h2, h3, p {
     margin: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
+  h1, h2, h3, p {
     margin: 60px;
   }
 }
@@ -124,7 +123,7 @@ button[type="submit"]:hover {
 #sputnik {
   height: 800px;
   max-width: 100%;
-  background: url(../images/sputnik.jpeg) no-repeat left center/cover;
+  background: url(../images/sputnik.jpg) no-repeat left center/cover;
 }
 
 @media screen and (max-width: 480px) {

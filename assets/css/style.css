@@ -97,41 +97,42 @@ button[type="submit"]:hover {
 
 /* Main Page and Styling */
 #astronaut {
-  height: 800px;
+  height: 900px;
   max-width: 100%;
   background: url(../images/astronaut.jpeg) no-repeat left center/cover;
 }
 
 @media screen and (max-width: 480px) {
   #astronaut {
-    height: 200px;
+    height: 300px;
   }
 }
 
 #universe {
-  height: 800px;
-  max-width: 100%;
+  height: auto;
+  width: 300px;
   background: url(../images/universe.webp) no-repeat left center/cover;
-  animation: zoomInOut 10s infinite alternate;
+  animation: zoomAndSpin 300s infinite linear; /* Increased animation duration */
 }
 
-@keyframes zoomInOut {
+@keyframes zoomAndSpin {
   0% {
-    transform: scale(1); /* Initial scale */
+    transform: scale(1) rotate(0deg); /* Initial scale and rotation */
+  }
+  25% {
+    transform: scale(1.1) rotate(90deg); /* Zoom in and rotate to 90 degrees */
   }
   50% {
-    transform: scale(1.1); /* Zoom in */
+    transform: scale(1.2) rotate(180deg); /* Zoom in and rotate to 180 degrees */
+  }
+  75% {
+    transform: scale(1.1) rotate(270deg); /* Zoom in and rotate to 270 degrees */
   }
   100% {
-    transform: scale(1); /* Zoom out */
+    transform: scale(1) rotate(360deg); /* Zoom out and rotate to 360 degrees */
   }
 }
 
-@media screen and (max-width: 480px) {
-  #universe {
-    height: 200px;
-  }
-}
 
 #sputnik {
   height: 800px;

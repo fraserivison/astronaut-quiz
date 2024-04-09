@@ -53,7 +53,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetElement.offsetTop - 50, // Adjusted offset for the fixed navbar
+            top: targetElement.offsetTop - 70, // Adjusted offset for the fixed navbar
             behavior: 'smooth'
         });
     });

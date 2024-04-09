@@ -97,6 +97,11 @@ button[type="submit"]:hover {
 }
 
 /* Main Page and Styling */
+#astronaut {
+  height: 800px;
+  max-width: 100%;
+  background: url(../images/astronaut.jpeg) no-repeat left center/cover;
+}
 
 h1,
 h2 {
@@ -142,7 +147,6 @@ nav ul {
 
 nav li {
   display: inline-block;
-  /* Make list items inline */
 }
 
 nav li a {
@@ -172,7 +176,6 @@ nav li a:hover {
   }
 }
 
-/* Ensure navbar sits above h1 */
 h1#home {
   margin-top: 70px;
 }
@@ -191,7 +194,8 @@ h1#home {
   flex: 1 1 45%; /* Adjusted flex properties */
 }
 
-#facts-section > li img {
+#facts-section > li img,
+.fame {
   width: 100%;
   max-width: 100%; /* Adjusted max-width */
   height: auto;
@@ -226,11 +230,34 @@ h1#home {
 }
 
 /* History */
-.big-pic {
+#sputnik {
   height: 200px;
   max-width: 100%;
   background: url(../images/sputnik.jpeg) no-repeat left center/cover;
 }
+
+/* Hall of Fame */
+.person {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+img.fame {
+  max-width: 200px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 550px) {
+  img.fame {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 
 @media screen and (min-width: 550px) {
   .big-pic {

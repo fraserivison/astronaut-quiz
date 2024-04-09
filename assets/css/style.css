@@ -207,7 +207,7 @@ h1#home {
 .blur {
   border: 1px solid;
   padding: 10px;
-  box-shadow: 3px 3px 15px;
+  box-shadow: 2px 2px 15px;
 }
 
 @media screen and (min-width: 600px) {
@@ -222,6 +222,20 @@ h1#home {
 @media screen and (max-width: 400px) {
   #facts-section > li {
     flex: 0 0 100%; /* Reset flex properties to make items stack */
+  }
+}
+
+/* History */
+.big-pic {
+  height: 200px;
+  max-width: 100%;
+  background: url(../images/sputnik.jpeg) no-repeat left center/cover;
+}
+
+@media screen and (min-width: 550px) {
+  .big-pic {
+    flex: 0 0 300px;
+    margin-left: 20px; /* Add margin to separate the image from the text */
   }
 }
 

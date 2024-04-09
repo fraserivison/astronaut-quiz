@@ -184,43 +184,28 @@ h1#home {
 }
 
 /* Facts Section */
-ul>img {
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-  max-height: 120px;
-}
-
-#facts-section {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 #facts-section > li {
-  width: 300px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#facts-section > li img {
+#facts-section > li aside {
+  flex: 1;
+}
+
+#facts-section > li aside img {
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease;
 }
 
-#facts-section > li:hover img {
-  transform: scale(1.1);
+#facts-section > li div {
+  flex: 1;
+  padding: 0 20px;
 }
 
-#facts-section > li:hover::after {
-  transform: translateY(0);
+#facts-section > li div p {
+  margin: 0;
 }
 
 /* Quiz */

@@ -103,6 +103,12 @@ button[type="submit"]:hover {
   background: url(../images/astronaut.jpeg) no-repeat left center/cover;
 }
 
+@media screen and (max-width: 480px) {
+  #astronaut {
+    height: 200px;
+  }
+}
+
 h1,
 h2 {
   font-size: 2em;

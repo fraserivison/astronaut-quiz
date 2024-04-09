@@ -109,6 +109,30 @@ button[type="submit"]:hover {
   }
 }
 
+#universe {
+  height: 800px;
+  max-width: 100%;
+  background: url(../images/universe.webp) no-repeat left center/cover;
+}
+
+@media screen and (max-width: 480px) {
+  #universe {
+    height: 200px;
+  }
+}
+
+#sputnik {
+  height: 800px;
+  max-width: 100%;
+  background: url(../images/sputnik.jpeg) no-repeat left center/cover;
+}
+
+@media screen and (max-width: 480px) {
+  #sputnik {
+    height: 200px;
+  }
+}
+
 h1,
 h2 {
   font-size: 2em;
@@ -236,11 +260,6 @@ h1#home {
 }
 
 /* History */
-#sputnik {
-  height: 200px;
-  max-width: 100%;
-  background: url(../images/sputnik.jpeg) no-repeat left center/cover;
-}
 
 /* Hall of Fame */
 .person {

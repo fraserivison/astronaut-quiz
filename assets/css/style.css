@@ -112,6 +112,19 @@ button[type="submit"]:hover {
   height: 800px;
   max-width: 100%;
   background: url(../images/universe.webp) no-repeat left center/cover;
+  animation: zoomInOut 10s infinite alternate;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
 }
 
 @media screen and (max-width: 480px) {

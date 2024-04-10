@@ -75,8 +75,10 @@ function typeText() {
     element.innerHTML = textToType.substring(0, index) + '<span id="cursor">|</span>'; // Add text cursor at the end
     // Increment index
     index++;
-    // Call the function recursively after a certain interval (adjust as needed)
-    setTimeout(typeText, 200); // Increase the timeout for slower typing
+    // Generate random typing speed between 50ms and 200ms
+    const typingSpeed = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
+    // Call the function recursively after a random interval
+    setTimeout(typeText, typingSpeed);
   } else {
     // Reset index to 0 when entire text has been typed
     index = 0;

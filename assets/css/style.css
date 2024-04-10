@@ -53,7 +53,8 @@ body {
   margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
   text-align: center;
-  margin: 20px; /* Adjusted margin */
+  margin: 20px;
+  /* Adjusted margin */
 }
 
 button,
@@ -91,22 +92,34 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width: 400px) {
+
   button,
   input,
   button[type="submit"] {
-    width: 200px; /* Adjusted width for smaller screens */
-    font-size: 14px; /* Adjusted font size for smaller screens */
+    width: 200px;
+    /* Adjusted width for smaller screens */
+    font-size: 14px;
+    /* Adjusted font size for smaller screens */
   }
 }
 
 /* Main Page and Styling */
-#facts-section, .left, .right, .wrapper, #fame {
-  margin: 0; /* Reset margin */
+#facts-section,
+.left,
+.right,
+.wrapper,
+#fame {
+  margin: 0;
+  /* Reset margin */
 }
 
-h1, h2, h3, .main-text {
+h1,
+h2,
+h3,
+.main-text {
   margin: 30px;
 }
+
 
 #astronaut {
   max-width: 100%;
@@ -115,12 +128,14 @@ h1, h2, h3, .main-text {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-  #universe,
-  #sputnik,
-  #earth {
-    width: 100%; /* Make images full width */
-    height: auto; /* Ensure aspect ratio is maintained */
-  }
+#universe,
+#sputnik,
+#earth {
+  width: 100%;
+  /* Make images full width */
+  height: auto;
+  /* Ensure aspect ratio is maintained */
+}
 
 #universe,
 #sputnik,
@@ -132,7 +147,6 @@ h1, h2, h3, .main-text {
   margin-right: auto;
   width: 75%;
 }
-
 
 
 @media screen and (min-width: 600px) {
@@ -156,8 +170,8 @@ h1, h2, h3, .main-text {
   width: 100%;
 }
 
-h1,
-h2 {
+
+h1, h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
@@ -239,21 +253,23 @@ nav li a:hover {
   gap: 20px;
 }
 
-#facts-section > li {
-  flex: 1 1 45%; /* Adjusted flex properties */
+#facts-section>li {
+  flex: 1 1 45%;
+  /* Adjusted flex properties */
 }
 
-#facts-section > li img,
+#facts-section>li img,
 .fame {
   width: 100%;
-  max-width: 100%; /* Adjusted max-width */
+  max-width: 100%;
+  /* Adjusted max-width */
   height: auto;
   border-top: solid;
   border-bottom: solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-#facts-section > li p {
+#facts-section>li p {
   font-size: x-small;
   font-family: 'Space Mono', monospace;
   text-align: left;
@@ -276,8 +292,9 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 400px) {
-  #facts-section > li {
-    flex: 0 0 100%; /* Reset flex properties to make items stack */
+  #facts-section>li {
+    flex: 0 0 100%;
+    /* Reset flex properties to make items stack */
   }
 }
 
@@ -318,7 +335,8 @@ button {
 }
 
 a:-webkit-any-link {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 

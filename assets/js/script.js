@@ -210,7 +210,7 @@ function showResult(username) {
                 <p style="font-family: 'Space Mono', monospace; ">${resultText}</p>
                 <br>
                 <br>
-                <a href="${linkHref}">${linkText}</a>
-            `;
+                <a href="${linkHref}" style="background-color: #4CAF50; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8em; margin-top: 20px; text-transform: uppercase; font-family: Courier; text-decoration: none;">${linkText}</a>`
+        ;
 
 } 

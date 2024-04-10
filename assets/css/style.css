@@ -7,7 +7,11 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, p, #facts-section, .left, .right, .wrapper, #fame {
+#facts-section, .left, .right, .wrapper, #fame {
+  margin: 0; /* Reset margin */
+}
+
+h1, h2, h3, p {
   margin: 30px;
 }
 
@@ -91,11 +95,29 @@ button[type="submit"]:hover {
 #astronaut {
   max-width: 100%;
   height: auto;
+  border-bottom: solid;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 400px) {
-  #astronaut {
-    width: 100%;
+  .welcome-content h1,
+  .welcome-content p,
+  button,
+  input,
+  button[type="submit"],
+  .navbar li a {
+    width: 100%; /* Make text and buttons full width */
+  }
+
+  .welcome-content p {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  #universe,
+  #sputnik,
+  #earth {
+    width: 100%; /* Make images full width */
+    height: auto; /* Ensure aspect ratio is maintained */
   }
 }
 
@@ -129,7 +151,6 @@ button[type="submit"]:hover {
   margin-right: auto;
   width: 100%;
 }
-
 
 h1,
 h2 {
@@ -222,7 +243,8 @@ nav li a:hover {
   width: 100%;
   max-width: 100%; /* Adjusted max-width */
   height: auto;
-  box-shadow: 2px 2px 5px #fff;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 #facts-section > li p {
@@ -232,9 +254,9 @@ nav li a:hover {
 }
 
 .blur {
-  border: 1px solid;
   padding: 10px;
-  box-shadow: 1px 1px 10px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (min-width: 600px) {
@@ -255,8 +277,6 @@ nav li a:hover {
 /* History */
 
 /* Hall of Fame */
-  
-
 
 /* Quiz */
 

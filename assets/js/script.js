@@ -26,6 +26,7 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
     });
 }
 
+
 // Retrieve the username from local storage
 let username = localStorage.getItem("username");
 

@@ -109,8 +109,7 @@ button[type="submit"]:hover {
 .right,
 .wrapper,
 #fame {
-  margin: 0;
-  /* Reset margin */
+  margin: 30px;
 }
 
 h1,
@@ -173,10 +172,15 @@ h3,
 
 h1, h2 {
   font-size: 1.8em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
   text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
 }
 
 h3 {
@@ -291,12 +295,6 @@ nav li a:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
-  #facts-section>li {
-    flex: 0 0 100%;
-    /* Reset flex properties to make items stack */
-  }
-}
 
 /* History */
 

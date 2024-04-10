@@ -59,6 +59,53 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Main Heading
+// Define the text you want to type
+const textToType = "So,you want to be an Astronaut?";
+// Get the element where you want to display the typing effect
+const element = document.getElementById("home");
+// Initialize index to 0
+let index = 0;
+
+// Function to display text with typing effect
+function typeText() {
+  // Check if index is less than or equal to the length of the text
+  if (index <= textToType.length) {
+    // Append next character to the element
+    element.innerHTML = textToType.substring(0, index) + '<span id="cursor">|</span>'; // Add text cursor at the end
+    // Increment index
+    index++;
+    // Call the function recursively after a certain interval (adjust as needed)
+    setTimeout(typeText, 200); // Increase the timeout for slower typing
+  } else {
+    // Reset index to 0 when entire text has been typed
+    index = 0;
+    // Call the function to make cursor blink
+    blinkCursor();
+    // Clear the element content after 30 seconds (adjust as needed)
+    setTimeout(clearText, 30000);
+  }
+}
+
+// Function to make cursor blink
+function blinkCursor() {
+  const cursor = document.getElementById("cursor");
+  setInterval(() => {
+    cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
+  }, 500); // Toggle visibility every 500 milliseconds for blinking effect
+}
+
+// Function to clear text
+function clearText() {
+  element.innerHTML = "";
+  // Call the function to type text again after clearing
+  setTimeout(typeText, 200); // Initial delay before typing starts again
+}
+
+// Initial call to start typing
+typeText();
+
+
 
 // quiz.html
 const spaceQuiz = [

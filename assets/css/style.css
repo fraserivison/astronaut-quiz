@@ -12,6 +12,12 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 400px) {
+  body {
+      background-size: 100% auto;
+  }
+}
+
 .space-main {
   position: fixed;
   top: 50%;
@@ -49,7 +55,7 @@ body {
 
 .welcome-content p {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
   text-align: center;
@@ -115,17 +121,12 @@ h1, h2, h3, .main-text {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-  .welcome-content p {
-    font-size: 14px; /* Adjust font size */
-  }
-
   #universe,
   #sputnik,
   #earth {
     width: 100%; /* Make images full width */
     height: auto; /* Ensure aspect ratio is maintained */
   }
-
 
 #universe,
 #sputnik {

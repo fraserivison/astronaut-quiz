@@ -4,18 +4,12 @@ body {
   background-repeat: repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-color: #000;
   color: white;
   text-align: justify;
   text-justify: inter-word;
   margin: 0;
-}
-
-@media only screen and (max-width: 400px) {
-  body {
-      background-size: 100% auto;
-  }
 }
 
 .space-main {

@@ -206,8 +206,8 @@ function showResult(username) {
 
     quiz.innerHTML = `
                 <h1>Quiz Completed!</h1>
-                <p>Score: ${score}/${spaceQuiz.length}</p>
-                <p>${resultText}</p>
+                <p style="font-family: 'Space Mono', monospace; ">Score: ${score}/${spaceQuiz.length}</p>
+                <p style="font-family: 'Space Mono', monospace; ">${resultText}</p>
                 <br>
                 <br>
                 <a href="${linkHref}">${linkText}</a>

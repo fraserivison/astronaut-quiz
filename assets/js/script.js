@@ -11,7 +11,7 @@ for (let i = 0; i < STAR_COUNT; i++) {
 console.log(result.substring(0, result.length - 1))
 
 // index.html
-if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+if (window.location.pathname === "/home.html") {
     document.getElementById("name").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
 
@@ -25,6 +25,7 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 
     });
 }
+
 
 
 // Retrieve the username from local storage

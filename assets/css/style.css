@@ -13,6 +13,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+      background-size: cover;
+  }
+}
+
 .space-main {
   position: fixed;
   top: 50%;

@@ -1,13 +1,15 @@
-.space-body {
+.space-body,
+.home-body {
+  background-image: url(../images/background.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   background-color: #000;
   color: white;
   text-align: justify;
   text-justify: inter-word;
   margin: 0;
-  padding: 20px; /* Add padding to create space inside the body */
-  display: flex; /* Use flexbox to center content */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
 }
 
 .space-main {
@@ -51,12 +53,15 @@
   margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
   text-align: center;
+  margin: 20px; /* Adjusted margin */
 }
 
-button, input, button[type="submit"] {
+button,
+input,
+button[type="submit"] {
   padding: 10px;
-  margin: 0 auto; /* This centers the element horizontally */
-  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -64,9 +69,8 @@ button, input, button[type="submit"] {
   width: 300px;
   border-radius: 5px;
   font-family: 'Space Mono', monospace;
-  display: block; /* Ensures the element takes up full width */
+  display: block;
 }
-
 
 input::placeholder {
   color: #fff;
@@ -86,20 +90,16 @@ button[type="submit"]:hover {
   background-color: #a8a2a2;
 }
 
-/* Main Page and Styling */
-.home-body {
-  background-image: url(../images/background.jpeg);
-  background-repeat: repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #000;
-  color: white;
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 0;
+@media screen and (max-width: 400px) {
+  button,
+  input,
+  button[type="submit"] {
+    width: 200px; /* Adjusted width for smaller screens */
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
 }
 
+/* Main Page and Styling */
 #facts-section, .left, .right, .wrapper, #fame {
   margin: 0; /* Reset margin */
 }
@@ -114,16 +114,6 @@ h1, h2, h3, .main-text {
   border-bottom: solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
-
-@media screen and (max-width: 400px) {
-  .welcome-content h1,
-  .welcome-content p,
-  button,
-  input,
-  button[type="submit"],
-  .navbar li a {
-    width: 100%; /* Make text and buttons full width */
-  }
 
   .welcome-content p {
     font-size: 14px; /* Adjust font size */

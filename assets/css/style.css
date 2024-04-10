@@ -1,3 +1,4 @@
+/* code partly from https://www.youtube.com/watch?v=_oFWg_NlKdo */
 .space-body,
 .home-body {
   background-image: url(../images/background.jpeg);
@@ -314,10 +315,15 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
   text-transform: uppercase;
 }
+
+a:-webkit-any-link {
+  text-decoration: none; /* Remove underline */
+}
+
 
 button:hover {
   background-color: #3e6b40;

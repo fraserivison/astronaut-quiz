@@ -180,7 +180,7 @@ h1, h2 {
 
 h2 {
   border-bottom: 1px solid white;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -268,8 +268,7 @@ nav li a:hover {
   max-width: 100%;
   /* Adjusted max-width */
   height: auto;
-  border-top: solid;
-  border-bottom: solid;
+  border: solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -310,8 +309,8 @@ nav li a:hover {
 #question {
   font-family: 'Space Mono', monospace;
   color: #fff;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 0.8em;
+  margin: 30px;
 }
 
 #options {
@@ -327,7 +326,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 0.8em;
   margin-top: 20px;
   text-transform: uppercase;
 }

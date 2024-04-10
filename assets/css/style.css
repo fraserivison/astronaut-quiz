@@ -1,18 +1,13 @@
-.space-body,
-body {
+.space-body {
   background-color: #000;
   color: white;
   text-align: justify;
   text-justify: inter-word;
   margin: 0;
-}
-
-#facts-section, .left, .right, .wrapper, #fame {
-  margin: 0; /* Reset margin */
-}
-
-h1, h2, h3, .main-text {
-  margin: 30px;
+  padding: 20px; /* Add padding to create space inside the body */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 .space-main {
@@ -79,8 +74,8 @@ input::placeholder {
 }
 
 button[type="submit"] {
-  background-color: #fff;
-  color: #000;
+  background-color: #4CAF50;
+  color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -92,6 +87,27 @@ button[type="submit"]:hover {
 }
 
 /* Main Page and Styling */
+.home-body {
+  background-image: url(../images/background.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+}
+
+#facts-section, .left, .right, .wrapper, #fame {
+  margin: 0; /* Reset margin */
+}
+
+h1, h2, h3, .main-text {
+  margin: 30px;
+}
+
 #astronaut {
   max-width: 100%;
   height: auto;
@@ -165,6 +181,7 @@ h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
 }
 
 p,
@@ -249,13 +266,13 @@ nav li a:hover {
 }
 
 #facts-section > li p {
-  font-size: 10px;
-  font-style: italic;
+  font-size: x-small;
+  font-family: 'Space Mono', monospace;
   text-align: left;
 }
 
-.blur {
-  padding: 10px;
+.fact {
+  padding: 20px;
   border-top: solid;
   border-bottom: solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -309,6 +326,7 @@ button {
   cursor: pointer;
   font-size: 18px;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 button:hover {

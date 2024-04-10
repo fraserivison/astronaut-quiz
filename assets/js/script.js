@@ -11,7 +11,7 @@ for (let i = 0; i < STAR_COUNT; i++) {
 console.log(result.substring(0, result.length - 1))
 
 // index.html
-if (window.location.pathname === "/home.html") {
+if (window.location.pathname === "/home.html" || window.location.pathname === "/") {
     document.getElementById("name").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
 
@@ -23,18 +23,17 @@ if (window.location.pathname === "/home.html") {
         // Redirect to home.html
         window.location.href = "home.html";
 
+        // Retrieve the username from local storage
+         let username = localStorage.getItem("username");
+
     });
 }
-
-
 
 // Retrieve the username from local storage
 let username = localStorage.getItem("username");
 
-
 // Set the username as the text content of the span element
-let usernameElements = document.querySelectorAll(".username");
-usernameElements.forEach(element => {
+document.querySelectorAll(".username").forEach(element => {
     element.textContent = username;
 });
 
@@ -45,6 +44,7 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
         element.style.padding = "10px";
     });
 }
+
 
 // home.html
 document.querySelectorAll('nav a').forEach(anchor => {

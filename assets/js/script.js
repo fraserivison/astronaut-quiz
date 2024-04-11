@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "home.html";
         });
     }
+    // Preload main image on home.html
+    const image = new Image();
+        image.src = "assets/images/astronaut.jpeg";
 
     // Retrieve the username from local storage
     let username = localStorage.getItem("username");
@@ -44,9 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// home.html
-const image = new Image();
-        image.src = "assets/images/astronaut.jpeg"; 
+// home.html 
 
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

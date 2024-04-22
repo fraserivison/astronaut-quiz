@@ -65,9 +65,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 // Main Heading
-// Define the text you want to type
 document.addEventListener("DOMContentLoaded", function () {
-    const textToType = "So, you want to be an Astronaut?";
+    // Retrieve the username from local storage
+    
+    // Main Heading
+    // Define the text you want to type
+    let userName = localStorage.getItem("username");
+    const textToType = `So <span class="userGreeting">${userName}</span>,you want to be an Astronaut?`;
     const element = document.getElementById("home");
     let index = 0;
 

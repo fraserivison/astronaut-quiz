@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "home.html";
         });
     }
+    
     // Preload main image on home.html
     const image = new Image();
         image.src = "assets/images/astronaut.jpeg";
@@ -77,9 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const typingSpeed = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
             setTimeout(typeText, typingSpeed);
         } else {
-            index = 0;
             blinkCursor();
-            setTimeout(clearText, 30000);
         }
     }
 
@@ -90,14 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500);
     }
 
-    function clearText() {
-        element.innerHTML = "";
-        setTimeout(typeText, 200);
-    }
-
     typeText();
 });
-
 
 
 // quiz.html

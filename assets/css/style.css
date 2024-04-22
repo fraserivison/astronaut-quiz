@@ -119,6 +119,45 @@ h3,
   margin: 30px;
 }
 
+h1 {
+  text-align: left;
+  font-size: 1.5em;
+
+}
+
+h1, h2 {
+  margin-bottom: 30px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+}
+
+p,
+li {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.8em;
+  line-height: 2.0;
+}
+
+#home-container {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
 #astronaut {
   max-width: 100%;
   height: auto;
@@ -166,39 +205,6 @@ h3,
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-
-h1 {
-  text-align: left;
-  font-size: 1.5em;
-
-}
-
-h1, h2 {
-  margin-bottom: 30px;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.8em;
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-}
-
-p,
-li {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 0.8em;
-  line-height: 2.0;
 }
 
 /* Nav Bar */

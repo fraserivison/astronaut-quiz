@@ -119,7 +119,6 @@ h3,
   margin: 30px;
 }
 
-
 #astronaut {
   max-width: 100%;
   height: auto;
@@ -169,18 +168,23 @@ h3,
   width: 100%;
 }
 
+h1 {
+  text-align: left;
+  font-size: 1.5em;
+
+}
 
 h1, h2 {
-  font-size: 1.8em;
   margin-bottom: 30px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
-  text-align: center;
 }
 
 h2 {
+  font-size: 1.8em;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 h3 {

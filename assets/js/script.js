@@ -65,37 +65,34 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 // Main Heading
-document.addEventListener("DOMContentLoaded", function () {
-    // Retrieve the username from local storage
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let userName = localStorage.getItem("username");
+        const textToType = `So <span class="userGreeting">${userName}</span>,you want to be an Astronaut?`;
+        const element = document.getElementById("home");
+        let index = 0;
     
-    // Main Heading
-    // Define the text you want to type
-    let userName = localStorage.getItem("username");
-    const textToType = `So <span class="userGreeting">${userName}</span>,you want to be an Astronaut?`;
-    const element = document.getElementById("home");
-    let index = 0;
-
-    function typeText() {
-        if (index <= textToType.length) {
-            element.innerHTML = textToType.substring(0, index) + '<span id="cursor">|</span>';
-            index++;
-            const typingSpeed = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
-            setTimeout(typeText, typingSpeed);
-        } else {
-            blinkCursor();
+        function typeText() {
+            if (index <= textToType.length) {
+                // Wrap the HTML content in a span element to prevent the '<' character from appearing
+                element.innerHTML = `<span>${textToType.substring(0, index)}</span><span id="cursor">|</span>`;
+                index++;
+                const typingSpeed = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
+                setTimeout(typeText, typingSpeed);
+            } else {
+                blinkCursor();
+            }
         }
-    }
-
-    function blinkCursor() {
-        const cursor = document.getElementById("cursor");
-        setInterval(() => {
-            cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
-        }, 500);
-    }
-
-    typeText();
-});
-
+    
+        function blinkCursor() {
+            const cursor = document.getElementById("cursor");
+            setInterval(() => {
+                cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
+            }, 500);
+        }
+    
+        typeText();
+    });
 
 // quiz.html
 const spaceQuiz = [

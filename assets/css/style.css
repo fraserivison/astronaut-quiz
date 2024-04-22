@@ -107,7 +107,6 @@ button[type="submit"]:hover {
 #facts-section,
 .left,
 .right,
-.wrapper,
 #fame {
   margin: 30px;
 }
@@ -289,7 +288,7 @@ nav li a:hover {
 }
 
 .fact {
-  padding: 20px;
+  padding: 20px 0;
   border-top: solid;
   border-bottom: solid;
   border-color: rgba(255, 255, 255, 0.5);

@@ -118,8 +118,14 @@ h3,
   margin: 30px;
 }
 
-h1 {
+#home {
   text-align: left;
+  font-size: 1.5em;
+
+}
+
+h1 {
+  text-align: center;
   font-size: 1.5em;
 
 }
@@ -344,9 +350,4 @@ button {
 a:-webkit-any-link {
   text-decoration: none;
   /* Remove underline */
-}
-
-
-button:hover {
-  background-color: #3e6b40;
 }

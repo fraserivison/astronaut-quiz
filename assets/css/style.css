@@ -347,6 +347,10 @@ button {
   text-transform: uppercase;
 }
 
+button:active {
+  transform: translateY(2px);
+}
+
 a:-webkit-any-link {
   text-decoration: none;
   /* Remove underline */

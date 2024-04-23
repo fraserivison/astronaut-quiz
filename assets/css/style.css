@@ -344,6 +344,7 @@ button {
   cursor: pointer;
   font-size: 0.8em;
   margin-top: 20px;
+  font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
 
@@ -354,4 +355,12 @@ button:active {
 a:-webkit-any-link {
   text-decoration: none;
   /* Remove underline */
+}
+
+#congrats {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
 }

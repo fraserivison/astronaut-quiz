@@ -105,9 +105,34 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const spaceQuiz = [
         {
-            question: "What is the name of the closest star to Earth?",
-            options: ["Alpha Centauri", "Proxima Centauri", "Betelgeuse", "Sirius"],
-            answer: "Proxima Centauri"
+            question: "What is the approximate diameter of the observable universe?",
+            options: ["93 million light-years", "93 billion light-years", "93 trillion light-years", "930 billion light-years"],
+            answer: "93 billion light-years"
+        },
+        {
+            question: "What is the mass of the black hole at the center of our galaxy?",
+            options: ["1 million Suns", "4 billion Suns", "10 billion Suns", "100 billion Suns"],
+            answer: "4 billion Suns"
+        },
+        {
+            question: "Who was the first person to set foot on the lunar surface?",
+            options: ["Buzz Aldrin", "Neil Armstrong", "Alan Shepard", "John Glenn"],
+            answer: "Neil Armstrong"
+        },
+        {
+            question: "What was the name of the first living being sent into orbit around the Earth?",
+            options: ["Rover", "Laika", "Astro", "Luna"],
+            answer: "Laika"
+        },
+        {
+            question: "What milestone did Valentina Tereshkova achieve in space exploration?",
+            options: ["First woman to orbit Mars", "First woman in space", "First woman to walk on the Moon", "First woman to reach the International Space Station"],
+            answer: "First woman in space"
+        },
+        {
+            question: "What is the expected outcome of the collision between the Milky Way and the Andromeda galaxy?",
+            options: ["Formation of a new star", "Formation of a black hole", "Formation of a supernova", "Formation of an elliptical galaxy"],
+            answer: "Formation of an elliptical galaxy"
         },
         {
             question: "What is the speed of light in miles per second?",
@@ -115,46 +140,22 @@ document.addEventListener("DOMContentLoaded", function () {
             answer: "186,000"
         },
         {
-            question: "Which planet is known as the 'Red Planet'?",
-            options: ["Venus", "Mercury", "Mars", "Saturn"],
-            answer: "Mars"
+            question: "How many times did Valentina Tereshkova orbit the Earth during her mission?",
+            options: ["24", "36", "48", "60"],
+            answer: "48"
         },
         {
-            question: "Who was the first person to set foot on the moon?",
-            options: ["Neil Armstrong", "Buzz Aldrin", "Alan Shepard", "John Glenn"],
-            answer: "Neil Armstrong"
+            question: "Who became the first Canadian to command the International Space Station (ISS)?",
+            options: ["Chris Hadfield", "Roberta Bondar", "Marc Garneau", "Julie Payette"],
+            answer: "Chris Hadfield"
         },
         {
-            question: "What is the name of the rover that NASA landed on Mars in 2012?",
-            options: ["Curiosity", "Opportunity", "Spirit", "Perseverance"],
-            answer: "Curiosity"
-        },
-        {
-            question: "What is the largest planet in our solar system?",
-            options: ["Mars", "Saturn", "Jupiter", "Neptune"],
-            answer: "Jupiter"
-        },
-        {
-            question: "What is the name of the galaxy that contains our solar system?",
-            options: ["Andromeda", "Milky Way", "Sombrero", "Whirlpool"],
-            answer: "Milky Way"
-        },
-        {
-            question: "Who was the first woman to fly in space?",
-            options: ["Sally Ride", "Valentina Tereshkova", "Mae Jemison", "Peggy Whitson"],
-            answer: "Valentina Tereshkova"
-        },
-        {
-            question: "What is the name of the spacecraft that carried humans to the moon for the first time?",
-            options: ["Gemini", "Apollo", "Mercury", "Voyager"],
-            answer: "Apollo"
-        },
-        {
-            question: "What is the expected fate of the Milky Way galaxy in around 4.5 billion years?",
-            options: ["It will collide with the Andromeda galaxy", "It will implode into a black hole", "It will drift into intergalactic space", "It will merge with the Triangulum galaxy"],
-            answer: "It will collide with the Andromeda galaxy"
+            question: "What percentage of the universe's gravity is believed to be due to dark matter?",
+            options: ["50%", "65%", "85%", "100%"],
+            answer: "85%"
         }
-    ];
+    ]
+    ;
 
     const questionElement = document.getElementById("question");
     const optionsElement = document.getElementById("options");

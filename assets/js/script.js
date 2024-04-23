@@ -66,33 +66,40 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
 // Main Heading
 
-    document.addEventListener("DOMContentLoaded", function () {
-        let userName = localStorage.getItem("username");
-        const textToType = `So <span class="userGreeting">${userName}</span>,you want to be an Astronaut?`;
-        const element = document.getElementById("home");
-        let index = 0;
-    
-        function typeText() {
-            if (index <= textToType.length) {
-                // Wrap the HTML content in a span element to prevent the '<' character from appearing
-                element.innerHTML = `<span>${textToType.substring(0, index)}</span><span id="cursor">|</span>`;
-                index++;
-                const typingSpeed = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
-                setTimeout(typeText, typingSpeed);
-            } else {
-                blinkCursor();
-            }
+document.addEventListener("DOMContentLoaded", function () {
+    let element = document.getElementById("home");
+    let index = 0;
+
+    // Retrieve username from localStorage
+    let userName = localStorage.getItem("username") || "";
+
+    // If username is found, set up typing effect
+    if (userName) {
+        const textToType = `<span>So <span class="userGreeting">${userName}</span>, you want to be an Astronaut?</span>`;
+        typeText(textToType);
+    }
+
+    function typeText(textToType) {
+        if (index <= textToType.length) {
+            element.innerHTML = textToType.substring(0, index) + `<span id="cursor">|</span>`;
+            index++;
+            const typingSpeed = Math.floor(Math.random() * (100 - 25 + 1)) + 25; // Decreased range for faster typing
+            setTimeout(() => typeText(textToType), typingSpeed);
+        } else {
+            blinkCursor();
         }
-    
-        function blinkCursor() {
-            const cursor = document.getElementById("cursor");
-            setInterval(() => {
-                cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
-            }, 500);
-        }
-    
-        typeText();
-    });
+    }
+
+    function blinkCursor() {
+        const cursor = document.getElementById("cursor");
+        setInterval(() => {
+            cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
+        }, 300); // Adjusted blink speed
+    }
+});
+
+
+
 
 // quiz.html
 const spaceQuiz = [

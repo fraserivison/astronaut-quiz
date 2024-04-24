@@ -110,7 +110,7 @@ button[type="submit"]:hover {
 
 
 /* Main Page and Styling */
-#facts-section,
+.facts-section,
 .left,
 .right {
   margin: 30px;
@@ -118,9 +118,8 @@ button[type="submit"]:hover {
 
 h1,
 h2,
-h3,
 .main-text {
-  margin: 30px;
+  margin: 10px 30px;
 }
 
 #home {
@@ -273,8 +272,7 @@ nav li a:hover {
   /* Adjusted flex properties */
 }
 
-.facts-section>li img,
-.fame {
+.facts-section>li img {
   width: 100%;
   max-width: 100%;
   /* Adjusted max-width */
@@ -416,7 +414,7 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 500px) {
-  p, #facts-section>li p {
+  p, .facts-section>li p {
     font-size: 1em;
   }
 }

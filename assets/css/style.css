@@ -379,8 +379,8 @@ a:-webkit-any-link {
   }
   
   .facts-section>li img {
-    width: 400px; /* Set a fixed width for the images */
-    height: auto; /* Maintain aspect ratio */
+    width: 400px;
+    height: 125px; 
   }
   
 .fame {
@@ -396,11 +396,23 @@ a:-webkit-any-link {
   }
   }
 
+  @media screen and (min-width: 750px) {
+  .facts-section>li img {
+    width: 575px;
+    height: 150px; 
+  }
+}
+
   @media screen and (min-width: 850px) {
     .fame {
       width: 450px !important;
       height: 350px !important;
     }
+
+    .facts-section>li img {
+    width: 750px;
+    height: 175px; 
+  }
     }
 
 @media screen and (min-width: 900px) {
@@ -473,4 +485,12 @@ a:-webkit-any-link {
     max-width: 400px !important;
     height: 550px !important;
   }
+
   }
+
+  @media screen and (min-width: 1250px) {
+  .facts-section>li img {
+    max-width: auto;
+    height: 275px; 
+  }
+}

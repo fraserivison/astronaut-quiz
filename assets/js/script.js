@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // If username is found, set up typing effect
     if (userName) {
-        const textToType = `<span>So <span class="userGreeting">${userName}</span>,you want to be an Astronaut?</span>`;
+        const textToType = `<span>So <span class="userGreeting">${userName}</span>, you want to be an Astronaut?</span>`;
         typeText(textToType);
     }
 

@@ -155,7 +155,7 @@ li {
   overflow: hidden;
 }
 
-#astronaut {
+.astronaut {
   max-width: 100%;
   height: auto;
   border-bottom: solid;
@@ -338,11 +338,13 @@ a:-webkit-any-link {
 @media screen and (min-width: 500px) {
   #home {
     font-size: 2em; /* Increase font size */
-    margin-top: 50px;
+    margin: 50px auto;
+    text-align: center;
+
   }
 
   nav ul {
-    font-size: 1.5em; /* Increase font size */
+    font-size: 0.8em; /* Increase font size */
     letter-spacing: 2px; /* Increase letter spacing */
   }
 
@@ -378,30 +380,18 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 500px) {
-  .image-container {
-      display: flex;
-      justify-content: center;
-      width: 50%;
-      margin: 0 auto;
-      border: solid;
-      border-color: rgba(255, 255, 255, 0.5);
-      animation: zoom 10s infinite alternate;
-  }
-}
-
-@keyframes zoom {
-  0% {
-      transform: scale(1);
-  }
-  100% {
-      transform: scale(1.1);
-  }
-}
-
-@media screen and (min-width: 500px) {
   h2,
   h3,
   .main-text {
     margin: 100px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .astronaut {
+    content: url('assets/images/astronaut-3.jpg');
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 2px solid black; /* Add a border */
   }
 }

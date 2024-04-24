@@ -1,14 +1,15 @@
 // code from https://codepen.io/wheresdara/pen/wvXBpwa
+// moving star background
 function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const STAR_COUNT = 400
-let result = ""
+const STAR_COUNT = 400;
+let result = "";
 for (let i = 0; i < STAR_COUNT; i++) {
-    result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
+    result += `${randomNumber(-100, 100)}vw ${randomNumber(-100, 100)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`;
 }
-console.log(result.substring(0, result.length - 1))
+console.log(result.substring(0, result.length - 1));
 
 // index.html
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "home.html";
         });
     }
-    
+
     // Preload main image on home.html
     const image = new Image();
-        image.src = "assets/images/astronaut.jpeg";
+    image.src = "assets/images/astronaut.jpeg";
 
     // Retrieve the username from local storage
     let username = localStorage.getItem("username");
@@ -98,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const fadeElements = document.querySelectorAll('.fade-in');
     const slideElements = document.querySelectorAll('.slide-in');
 
@@ -183,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
             answer: "85%"
         }
     ]
-    ;
+        ;
 
     const questionElement = document.getElementById("question");
     const optionsElement = document.getElementById("options");

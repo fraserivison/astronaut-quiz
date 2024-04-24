@@ -12,6 +12,7 @@ body {
   margin: 0px 30px;
 }
 
+/* Welcome page */
 .space-main {
   position: relative;
   top: 100%;
@@ -55,7 +56,6 @@ body {
   font-family: 'Space Mono', monospace;
   text-align: center;
   margin: 20px;
-  /* Adjusted margin */
 }
 
 .welcome-fav {
@@ -68,8 +68,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
 
 button,
 input,
@@ -104,8 +102,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #a8a2a2;
 }
-
-
 
 /* Main Page and Styling */
 .facts-section,
@@ -190,9 +186,7 @@ li {
 #sputnik,
 #earth {
   width: 100%;
-  /* Make images full width */
   height: auto;
-  /* Ensure aspect ratio is maintained */
 }
 
 #universe,
@@ -234,9 +228,7 @@ nav ul {
   font-family: 'Space Mono', monospace;
   text-align: center;
   display: flex;
-  /* Use Flexbox */
   justify-content: space-between;
-  /* Space items evenly */
 }
 
 nav li {
@@ -258,10 +250,7 @@ nav li a:hover {
   background-color: #555;
 }
 
-
-
-
-/* Facts Section */
+/* Facts and Hall of Fame section*/
 .facts-section {
   list-style-type: none;
   padding: 0;
@@ -273,13 +262,11 @@ nav li a:hover {
 
 .facts-section>li {
   flex: 1 1 45%;
-  /* Adjusted flex properties */
 }
 
 .facts-section>li img {
   width: 100%;
   max-width: 100%;
-  /* Adjusted max-width */
   height: auto;
   border: solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -297,13 +284,7 @@ nav li a:hover {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-
-/* History */
-
-/* Hall of Fame */
-
 /* Quiz */
-
 #quiz {
   text-align: center;
   margin-top: 50px;
@@ -329,7 +310,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1em;
   margin-top: 20px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
@@ -341,9 +322,9 @@ button:active {
 
 a:-webkit-any-link {
   text-decoration: none;
-  /* Remove underline */
 }
 
+/* Apply.html */
 #congrats {
   position: fixed;
   top: 50%;
@@ -377,16 +358,16 @@ a:-webkit-any-link {
     gap: 20px;
     font-size: 1em;
   }
-  
+
   .facts-section>li img {
     width: 400px;
-    height: 125px; 
+    height: 125px;
   }
-  
-.fame {
-  width: 375px !important;
-  height: 250px !important;
-}
+
+  .fame {
+    width: 375px !important;
+    height: 250px !important;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -394,34 +375,34 @@ a:-webkit-any-link {
     width: 375px !important;
     height: 250px !important;
   }
-  }
+}
 
-  @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .facts-section>li img {
     width: 575px;
-    height: 150px; 
+    height: 150px;
   }
 }
 
-  @media screen and (min-width: 850px) {
-    .fame {
-      width: 450px !important;
-      height: 350px !important;
-    }
-
-    .facts-section>li img {
-    width: 750px;
-    height: 175px; 
+@media screen and (min-width: 850px) {
+  .fame {
+    width: 450px !important;
+    height: 350px !important;
   }
-    }
+
+  .facts-section>li img {
+    width: 750px;
+    height: 175px;
+  }
+}
 
 @media screen and (min-width: 900px) {
   body {
-    margin: 0 150px; /* Increase margin space on larger screens */
+    margin: 0 150px;
   }
 
   nav ul {
-    justify-content: space-between; /* Space items evenly */
+    justify-content: space-between;
   }
 
   nav li {
@@ -430,53 +411,53 @@ a:-webkit-any-link {
   }
 
   nav li a {
-    padding: 10px 20px; /* Adjust padding for navbar links */
-    font-size: 1em; /* Increase font size for navbar links */
+    padding: 10px 20px;
+    font-size: 1em;
   }
 
   .welcome-container {
-    margin: 100px auto; /* Center the welcome container and add margin space */
-    max-width: 800px; /* Limit width of content container */
+    margin: 100px auto;
+    max-width: 800px;
   }
 
   .welcome-content p {
-    margin: 20px 0; /* Adjust paragraph margin */
+    margin: 20px 0;
   }
 
   .facts-section {
-    gap: 30px; /* Increase gap between fact items */
+    gap: 30px;
   }
 
   .facts-section>li {
-    flex: 1 1 calc(50% - 15px); /* Adjust flex properties for fact items */
+    flex: 1 1 calc(50% - 15px);
   }
 
   .facts-section>li p {
-    font-size: 0.9em; /* Increase font size for fact descriptions */
+    font-size: 0.9em;
   }
 
   h1,
   h2 {
-    margin: 20px 0; /* Adjust margin for headings */
-    font-size: 3em; /* Increase font size for headings */
+    margin: 20px 0;
+    font-size: 3em;
   }
 
   .main-text {
-    margin: 20px 0; /* Adjust margin for main text */
-    font-size: 1em; /* Adjust font size for main text */
+    margin: 20px 0;
+    font-size: 1em;
   }
 
   #universe,
   #sputnik,
   #moon,
   #earth {
-    max-width: 400px; /* Set a maximum width for the images */
-    width: 100%; /* Ensure images fill their containers */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 400px;
+    width: 100%;
+    height: auto;
   }
 
   #quiz {
-    margin-top: 100px; /* Adjust margin for quiz section */
+    margin-top: 100px;
   }
 }
 
@@ -486,11 +467,11 @@ a:-webkit-any-link {
     height: 550px !important;
   }
 
-  }
+}
 
-  @media screen and (min-width: 1250px) {
+@media screen and (min-width: 1250px) {
   .facts-section>li img {
     max-width: auto;
-    height: 275px; 
+    height: 275px;
   }
 }

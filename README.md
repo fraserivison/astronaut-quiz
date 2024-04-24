@@ -1,7 +1,7 @@
 # So You Want To Be An Astronaut?
 
 ## Overview
-*So You Want To Be An Astronaut?* is an interactive and educational website designed to ignite curiosity about space exploration and take you on a journey to see if you've got what it takes to become an astronaut. The website aims to engage users in learning about various aspects of space and then allow them the opportunity to test their knowledge at the end through an interactive quiz.
+*So You Want To Be An Astronaut?* is an interactive and educational website designed to ignite curiosity about space exploration and take you on a journey to see if you've got what it takes to become an astronaut. The website aims to engage users in learning about various aspects of space and then give the user an opportunity to test their knowledge at the end through an interactive quiz.
 
 ![Viewports](md_images/all-viewports.png)
 

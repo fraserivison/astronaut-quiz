@@ -274,7 +274,7 @@ nav li a:hover {
 }
 
 .facts-section>li p {
-  font-size: x-small;
+  font-size: 1em;
   font-family: 'Space Mono', monospace;
   text-align: left;
 }
@@ -431,10 +431,6 @@ a:-webkit-any-link {
 
   .facts-section>li {
     flex: 1 1 calc(50% - 15px);
-  }
-
-  .facts-section>li p {
-    font-size: 0.9em;
   }
 
   h1,

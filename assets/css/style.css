@@ -124,13 +124,13 @@ h2,
 
 #home {
   text-align: left;
-  font-size: 1.5em;
-
+  font-size: 1.4em;
 }
 
 h1 {
   text-align: center;
   font-size: 1.5em;
+  margin: 30px;
 
 }
 
@@ -231,15 +231,16 @@ li {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 0 30px;
   overflow: hidden;
   font-family: 'Space Mono', monospace;
   text-align: center;
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Space items evenly */
 }
 
 nav li {
-  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -248,9 +249,10 @@ nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 10px; /* Adjust padding for better spacing */
+  padding: 5px 10px;
   text-decoration: none;
   font-family: 'Space Mono', monospace;
+  font-size: 0.6em;
 }
 
 nav li a:hover {
@@ -354,42 +356,31 @@ a:-webkit-any-link {
 /* Media queries */
 
 @media screen and (min-width: 500px) {
-  #home {
-    font-size: 1.5em;
-    margin: 50px 30px;
-    text-align: center;
-
-  }
-
-  nav ul {
-    font-size: 0.8em; /* Increase font size */
-    letter-spacing: 2px; /* Increase letter spacing */
-  }
-
-  @media screen and (max-width: 500px) {
-    nav li a {
-      font-size: 10px;
-      padding: 8px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    nav li a {
-      font-size: 14px;
-      padding: 10px;
-    }
-  }
-
-  /* #universe {
-    height: auto;
-  }
-
   .facts-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     font-size: 1em;
   }
+
+  #home {
+    font-size: 1.2em;
+    margin: 40px 30px;
+    text-align: center;
+
+  }
+}
+  
+
+
+
+  /* #universe {
+    height: auto;
+  }
+
+  
+
+  
 }
 
 

@@ -294,7 +294,6 @@ nav li a:hover {
 .fact,
 .fame {
   border-top: solid;
-  border-bottom: solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -414,7 +413,7 @@ a:-webkit-any-link {
 
   nav li a {
     padding: 10px 20px; /* Adjust padding for navbar links */
-    font-size: 0.8em; /* Increase font size for navbar links */
+    font-size: 1em; /* Increase font size for navbar links */
   }
 
   .welcome-container {
@@ -469,9 +468,6 @@ a:-webkit-any-link {
     height: 550px !important;
   }
   }
-
-@media screen and (min-width: 1260px) {
-
 
 
 

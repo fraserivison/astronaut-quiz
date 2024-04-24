@@ -43,7 +43,7 @@ body {
 
 .welcome-content h1 {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.9em;
   text-align: center;
 }
 
@@ -56,6 +56,22 @@ body {
   margin: 20px;
   /* Adjusted margin */
 }
+
+.welcome-fav {
+  text-align: center;
+}
+
+.welcome-fav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-user-astronaut {
+  margin-bottom: 20px;
+}
+
 
 button,
 input,

@@ -65,16 +65,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Main Heading
-
+// Main Heading with username added in
 document.addEventListener("DOMContentLoaded", function () {
     let element = document.getElementById("home");
     let index = 0;
 
-    // Retrieve username from localStorage
     let userName = localStorage.getItem("username") || "";
 
-    // If username is found, set up typing effect
     if (userName) {
         const textToType = `<span>So <span class="userGreeting">${userName}</span>, you want to be an Astronaut?</span>`;
         typeText(textToType);
@@ -99,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Heading and paragraph animations when scrolled to
 document.addEventListener("DOMContentLoaded", function () {
     const fadeElements = document.querySelectorAll('.fade-in');
     const slideElements = document.querySelectorAll('.slide-in');
@@ -126,8 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', checkAnimations);
     checkAnimations();
 });
-
-
 
 
 // quiz.html

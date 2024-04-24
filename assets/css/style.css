@@ -9,7 +9,7 @@ body {
   color: white;
   text-align: justify;
   text-justify: inter-word;
-  margin: 0;
+  margin: 0px 30px;
 }
 
 .space-main {
@@ -28,6 +28,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.5);
   }
@@ -68,9 +69,6 @@ body {
   align-items: center;
 }
 
-.fa-user-astronaut {
-  margin-bottom: 20px;
-}
 
 
 button,
@@ -130,11 +128,10 @@ h2,
 h1 {
   text-align: center;
   font-size: 1.5em;
-  margin: 30px;
-
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 30px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
@@ -236,8 +233,10 @@ nav ul {
   overflow: hidden;
   font-family: 'Space Mono', monospace;
   text-align: center;
-  display: flex; /* Use Flexbox */
-  justify-content: space-between; /* Space items evenly */
+  display: flex;
+  /* Use Flexbox */
+  justify-content: space-between;
+  /* Space items evenly */
 }
 
 nav li {
@@ -292,7 +291,8 @@ nav li a:hover {
   text-align: left;
 }
 
-.fact, .fame {
+.fact,
+.fame {
   border-top: solid;
   border-bottom: solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -346,35 +346,103 @@ a:-webkit-any-link {
 }
 
 #congrats {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 !important;
 }
 
 /* Media queries */
+@media screen and (min-width: 600px) {
+  #home {
+    font-size: 3em;
+    margin: 40px;
+    text-align: center;
+  }
 
-@media screen and (min-width: 500px) {
+  body {
+    margin: auto 75px;
+    font-size: small;
+  }
+
   .facts-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     font-size: 1em;
   }
+}
 
-  #home {
-    font-size: 1.2em;
-    margin: 40px 30px;
-    text-align: center;
+@media screen and (min-width: 900px) {
+  body {
+    margin: 0 150px; /* Increase margin space on larger screens */
+  }
 
+  nav ul {
+    justify-content: space-between; /* Space items evenly */
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li a {
+    padding: 10px 20px; /* Adjust padding for navbar links */
+    font-size: 0.8em; /* Increase font size for navbar links */
+  }
+
+  .welcome-container {
+    margin: 100px auto; /* Center the welcome container and add margin space */
+    max-width: 800px; /* Limit width of content container */
+  }
+
+  .welcome-content p {
+    margin: 20px 0; /* Adjust paragraph margin */
+  }
+
+  .facts-section {
+    gap: 30px; /* Increase gap between fact items */
+  }
+
+  .facts-section>li {
+    flex: 1 1 calc(50% - 15px); /* Adjust flex properties for fact items */
+  }
+
+  .facts-section>li p {
+    font-size: 0.9em; /* Increase font size for fact descriptions */
+  }
+
+  h1,
+  h2 {
+    margin: 20px 0; /* Adjust margin for headings */
+    font-size: 3em; /* Increase font size for headings */
+  }
+
+  .main-text {
+    margin: 20px 0; /* Adjust margin for main text */
+    font-size: 1em; /* Adjust font size for main text */
+  }
+
+  #universe,
+  #sputnik,
+  #moon,
+  #earth {
+    max-width: 400px; /* Set a maximum width for the images */
+    width: 100%; /* Ensure images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #quiz {
+    margin-top: 100px; /* Adjust margin for quiz section */
   }
 }
-  
 
 
 
-  /* #universe {
+
+/* #universe {
     height: auto;
   }
 
@@ -413,7 +481,7 @@ a:-webkit-any-link {
   button[type="submit"] {
     width: 200px;
     /* Adjusted width for smaller screens */
-    font-size: 14px;
-    /* Adjusted font size for smaller screens */
-  }
+font-size: 14px;
+/* Adjusted font size for smaller screens */
+}
 }

@@ -343,7 +343,7 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 600px) {
   #home {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 40px;
     text-align: center;
   }

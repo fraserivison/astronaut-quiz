@@ -416,3 +416,9 @@ a:-webkit-any-link {
   }
 }
 
+@media screen and (min-width: 500px) {
+  p {
+    font-size: 1em;
+  }
+}
+

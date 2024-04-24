@@ -83,6 +83,7 @@ button[type="submit"] {
   border-radius: 5px;
   font-family: 'Space Mono', monospace;
   display: block;
+  text-align: center;
 }
 
 input::placeholder {

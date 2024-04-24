@@ -372,7 +372,31 @@ a:-webkit-any-link {
     gap: 20px;
     font-size: 1em;
   }
+  
+  .facts-section>li img {
+    width: 400px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+.fame {
+  width: 375px !important;
+  height: 250px !important;
 }
+}
+
+@media screen and (min-width: 700px) {
+  .fame {
+    width: 375px !important;
+    height: 250px !important;
+  }
+  }
+
+  @media screen and (min-width: 850px) {
+    .fame {
+      width: 450px !important;
+      height: 350px !important;
+    }
+    }
 
 @media screen and (min-width: 900px) {
   body {
@@ -438,6 +462,15 @@ a:-webkit-any-link {
     margin-top: 100px; /* Adjust margin for quiz section */
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .fame {
+    max-width: 400px !important;
+    height: 550px !important;
+  }
+  }
+
+@media screen and (min-width: 1260px) {
 
 
 

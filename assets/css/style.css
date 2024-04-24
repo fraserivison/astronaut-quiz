@@ -353,6 +353,11 @@ a:-webkit-any-link {
 }
 
 /* Media queries */
+@media screen and (max-width: 394px) {
+  #home {
+    font-size: 1.2em;
+  }
+
 @media screen and (min-width: 600px) {
   #home {
     font-size: 3em;

@@ -357,6 +357,7 @@ a:-webkit-any-link {
   #home {
     font-size: 1.2em;
   }
+}
 
 @media screen and (min-width: 600px) {
   #home {
@@ -473,49 +474,3 @@ a:-webkit-any-link {
     height: 550px !important;
   }
   }
-
-
-
-/* #universe {
-    height: auto;
-  }
-
-  
-
-  
-}
-
-
-@media screen and (max-width: 500px) {
-  #sputnik {
-    height: 200px;
-  }
-
-
-
-
-@media screen and (min-width: 500px) {
-  h2,
-  h3,
-  .main-text {
-    margin: 20px 100px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  p, .facts-section>li p {
-    font-size: 1em;
-  }
-}
-
-
-@media screen and (max-width: 400px) {
-  button,
-  input,
-  button[type="submit"] {
-    width: 200px;
-    /* Adjusted width for smaller screens */
-font-size: 14px;
-/* Adjusted font size for smaller screens */
-}
-}

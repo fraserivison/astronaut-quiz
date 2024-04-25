@@ -151,8 +151,10 @@ Overall, the testing phase played a crucial role in delivering a high-quality, r
 
 
 ### Mobile:
-
-
+![Lighthouse Performance Testing Mobile](md_images/mobile-index.png)
+![Lighthouse Performance Testing Mobile](md_images/mobile-home.png)
+![Lighthouse Performance Testing Mobile](md_images/mobile-home-with-fade.png)
+![Lighthouse Performance Testing Mobile](md_images/mobile-quiz.png)
 
 ## Bugs
 

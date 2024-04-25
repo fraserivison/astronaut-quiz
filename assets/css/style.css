@@ -104,7 +104,7 @@ input::placeholder {
 }
 
 button[type="submit"]:hover {
-  background-color: #a8a2a2;
+  background-color: #478748;
 }
 
 /* Main Page and Styling */
@@ -160,7 +160,6 @@ li {
   line-height: 2.0;
 }
 
-/* 
 .fade-in {
   opacity: 0;
   transition: opacity 3s ease-in-out;
@@ -181,7 +180,6 @@ li {
   transform: translateX(0);
 }
 
-*/
 
 #home-container {
   height: 100px;

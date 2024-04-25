@@ -164,27 +164,51 @@ Across both mobile and desktop platforms, each page of the website exhibited con
 ![Lighthouse Performance Testing Mobile](md_images/mobile-quiz.png)
 
 ## Bugs
-
+During deployment and throughout the testing and development phases, a few bugs surfaced, as is common in any project. However, diligent debugging and troubleshooting efforts were undertaken, leading to their successful resolution. These bugs ranged from minor styling inconsistencies to more significant issues affecting functionality. Through thorough testing and careful attention to detail, the bugs were effectively fixed, resulting in a more robust and polished final product.
 
 ## Deployment
+The deployment process for the website on GitHub Pages followed these step-by-step instructions:
+
+Access the GitHub repository containing the project [HERE](https://github.com/fraserivison/astronaut-quiz).
+
+Navigate to Settings which is located at the far right of the toolbar and click on it.
+
+On the left hand side there is an option called Pages.
+
+Once that has been clicked on there is a section that says Branch with a button underneath that will need to be set to Main and Route.
+
+Once that has been selected, the GitHub Pages section will automatically refresh, indicating the ongoing deployment process.
+
+Upon successful deployment, a detailed ribbon display will appear, signaling that the website is now live on GitHub Pages.
+
+The live link to the deployed website can be accessed at the GitHub Pages URL, which will be displayed in the GitHub Pages section at the top of the screen. The live link for the website can be found here.
+
+This streamlined deployment process ensures that the latest version of the website is consistently available on GitHub Pages, providing a public-facing link for users to explore.
+
+To run the the website locally, follow these additional steps:
+
+Log in to GitHub and navigate to the [repository](https://github.com/fraserivison/astronaut-quiz).
+
+Click on the Code button and select Download ZIP to download the entire repository as a compressed file.
+
+Once the download is complete, extract the ZIP file to access the project files.
+
+Utilise the extracted files in your preferred local development environment to explore and make modifications as needed.
+
+By following these steps, developers can easily download the repository, extract the project files, and run the website in their local environment for testing, debugging, or further development. This process facilitates a seamless transition between local development and GitHub Pages deployment, ensuring a smooth and efficient workflow.
 
 
 ## Credits
 
 ### Content:
-Info is taken from chat gpt
-
-Space facts directly from: https://www.buzzfeed.com/audreyworboys/space-facts
-
+The content of the website was created to provide users with accurate and engaging information. While some of the content was generated with the assistance of ChatGPT, the facts were sourced from a reputable website to ensure its credibility and accuracy. By incorporating facts acquired from credited sources and supplementing them with images sourced from Google Images, the website delivers reliable information about space exploration, human history in space, and other related topics. Additionally, ChatGPT was used to correct and analyse code when needed, ensuring that the website functioned smoothly and efficiently. 
 
 ### Media:
+[Favicon](https://favicon.io/emoji-favicons/rocket/)
 
-Favicon in tab (https://favicon.io/emoji-favicons/rocket/)
+[Facts](https://www.buzzfeed.com/audreyworboys/space-facts)
 
-Google images 
-
-### Extra Help:
-
+[GoogleImages](https://www.google.co.uk/search?q=universe&sca_esv=8c14989faf3bda94&sca_upv=1&sxsrf=ACQVn0_bjULf2vQz6I6jOHfYIVt0JBHjhg:1714022184489&source=hp&biw=1384&bih=727&ei=KOcpZuWOG4W_hbIP1f-mqAM&iflsig=ANes7DEAAAAAZin1OHW6w3gy6TDjCqiCZjRGzhH5jOIi&ved=0ahUKEwjlwsObztyFAxWFX0EAHdW_CTUQ4dUDCA8&uact=5&oq=universe&gs_lp=EgNpbWciCHVuaXZlcnNlMgQQIxgnMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESP4SUABYjxFwAHgAkAEAmAHlCKABvBeqAQsyLjMuNS0xLjEuMbgBA8gBAPgBAYoCC2d3cy13aXotaW1nmAIIoALbF8ICCBAAGIAEGLEDmAMAkgcNMi4zLjQtMS4wLjEuMaAH3zI&sclient=img&udm=2)
 
 ### Code
 [404.html Template](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
@@ -193,8 +217,7 @@ Google images
 
 [Background Image](https://www.youtube.com/watch?v=_oFWg_NlKdo)
 
-### Styling and Media 
-
+## End.
 
 [Back to TOP](#table-of-contents)
           

@@ -76,7 +76,7 @@ button[type="submit"] {
   margin: 0 auto;
   margin-bottom: 30px;
   border: 2px solid #fff;
-  background-color: transparent;
+  background-color: #4CAF50;
   color: #fff;
   font-size: 16px;
   width: 300px;
@@ -84,20 +84,23 @@ button[type="submit"] {
   font-family: 'Space Mono', monospace;
   display: block;
   text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.button-link {
+  text-decoration: none;
+}
+
+.button-text {
+  text-decoration: none;
+}
+
+
 
 input::placeholder {
   color: #fff;
   opacity: 0.7;
-}
-
-button[type="submit"] {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
@@ -315,15 +318,13 @@ button {
   margin-top: 20px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
+  text-decoration: none !important;
 }
+
 
 button:active {
   transform: translateY(2px);
-}
-
-a:-webkit-any-link {
-  text-decoration: none;
-}
+}  
 
 /* Apply.html */
 #congrats {
@@ -468,7 +469,6 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1250px) {
   .facts-section>li img {
-    max-width: auto;
     height: 275px;
   }
 }

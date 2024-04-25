@@ -134,14 +134,14 @@ Overall, the testing phase played a crucial role in delivering a high-quality, r
 
 ### Validator Testing
 
-
 ### HTML:
-
+![HTML Validator Test](md_images/html.png)
 
 ### CSS:
-
+![CSS Validator Test](md_images/css.png)
 
 ### Javascript:
+![Javascript Validator Test](md_images/js.png)
 
 
 ## Performance

@@ -3,7 +3,7 @@
 ## Overview
 *So You Want To Be An Astronaut?* is an interactive and educational website designed to ignite curiosity about space exploration and take you on a journey to see if you've got what it takes to become an astronaut. The website aims to engage users in learning about various aspects of space and then give the user an opportunity to test their knowledge at the end through an interactive quiz.
 
-![Viewports](md_images/all-viewports.png)
+![Viewports](md_images/viewports.png)
 
 # Table of contents
 - [User Experience (UX)](#ux)
@@ -31,19 +31,24 @@ This website is for space enthusiasts who wanted to engage in an enjoyable and s
 The goal of the site is to provide a captivating and enriching platform that entertains and educates users about space exploration. Through an engaging quiz and interactive content, the owner aims to create an immersive experience that sparks curiosity and fosters a passion for astronomy and space science.
 
 ## Structure
+Balsamiq wireframes was used as a tool for meticulously planning out the mobile and desktop layout of a project. With its intuitive interface and wide array of pre-designed components, ideas were swiftly sketched out and visualized. By creating wireframes for both mobile and desktop layouts, teams can ensure a cohesive and user-friendly design across various screen sizes and devices. Balsamiq's simplicity enables quick iterations, allowing stakeholders to provide feedback early in the design process and iterate rapidly. Moreover, the low-fidelity nature of Balsamiq wireframes encourages a focus on functionality and user flow rather than intricate design details, fostering efficient communication and collaboration among team members. Overall, leveraging Balsamiq wireframes streamlines the design process, fosters collaboration, and ultimately leads to the creation of more polished and user-centric digital experiences.
 
-
-![Desktop Wireframe](md_images/desktop-wireframe.png)
-![Mobile Wireframe](md_images/mobile-wireframe.png)
+![Desktop Wireframe](md_images/astronaut-wireframe-desktop.jpg)
+![Mobile Wireframe](md_images/astronaut-wireframe-mobile.jpg)
 
 ## Surface
 
 ### Colours
 Main colours:
-
+* background color: rgb(134, 223, 255, 0.4);
+* font color: #6217ee#3c3939;
+* text-shadow: #c6c4c4;
+* border-top: #c6c4c4;
 
 ### Fonts 
 Main fonts:
+* font-family: 'Rubik', sans-serif;
+* font-family: 'Chelsea Market', sans-serif;
 
 
 ## Features

@@ -1,3 +1,4 @@
+// jshint esversion: 6
 // code from https://codepen.io/wheresdara/pen/wvXBpwa
 // moving star background
 function randomNumber(min, max) {

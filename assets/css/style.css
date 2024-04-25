@@ -88,6 +88,7 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
+
 .button-link {
   text-decoration: none;
 }
@@ -97,14 +98,13 @@ button[type="submit"] {
 }
 
 
-
 input::placeholder {
   color: #fff;
   opacity: 0.7;
 }
 
 button[type="submit"]:hover {
-  background-color: #478748;
+  background-color: #19eb1d;
 }
 
 /* Main Page and Styling */
@@ -160,6 +160,7 @@ li {
   line-height: 2.0;
 }
 
+/* Heavy Animations */
 .fade-in {
   opacity: 0;
   transition: opacity 3s ease-in-out;
@@ -179,7 +180,7 @@ li {
   opacity: 1;
   transform: translateX(0);
 }
-
+/* End of Heavy Animations */
 
 #home-container {
   height: 100px;

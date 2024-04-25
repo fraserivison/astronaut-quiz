@@ -145,14 +145,21 @@ Overall, the testing phase played a crucial role in delivering a high-quality, r
 
 
 ## Performance
-
+Lighthouse on Google Chrome was used to test the website on both mobile and desktop formats because it offers a comprehensive evaluation of performance, accessibility, best practices, and SEO. By running Lighthouse audits, valuable insights were gained into how well the website performs across different devices and screen sizes. The detailed reports provided by Lighthouse helped identify areas for improvement, such as optimising loading times, enhancing accessibility features, and ensuring adherence to best practices. Addressing these issues not only improved the overall performance but also enhanced the user experience. 
 
 ### Desktop:
-
+Across both mobile and desktop platforms, each page of the website exhibited consistent performance except for the home.html page, which notably performed significantly better on desktop than the mobile when the fade in/slide in animation is active through CSS and Javascript. The disparity in performance can be attributed to the heavy animation effects utilised on the home.html page. These elements, while visually appealing, can impact loading times and overall performance, particularly on mobile devices with limited processing power and slower network speeds. Therefore, optimising these elements for better performance on mobile devices would be a priority moving forward to ensure a consistent user experience across all platforms.
+![Lighthouse Performance Testing Mobile](md_images/desktop-home.png)
 
 ### Mobile:
+
+#### Intro Page (index.html):
 ![Lighthouse Performance Testing Mobile](md_images/mobile-index.png)
+
+#### With animations inactive:
 ![Lighthouse Performance Testing Mobile](md_images/mobile-home.png)
+
+#### With animations inactive:
 ![Lighthouse Performance Testing Mobile](md_images/mobile-home-with-fade.png)
 ![Lighthouse Performance Testing Mobile](md_images/mobile-quiz.png)
 

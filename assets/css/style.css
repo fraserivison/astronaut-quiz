@@ -76,7 +76,7 @@ button[type="submit"] {
   margin: 0 auto;
   margin-bottom: 30px;
   border: 2px solid #fff;
-  background-color: #4CAF50;
+  background-color: #509e53;
   color: #fff;
   font-size: 16px;
   width: 300px;
@@ -160,6 +160,7 @@ li {
   line-height: 2.0;
 }
 
+/* 
 .fade-in {
   opacity: 0;
   transition: opacity 3s ease-in-out;
@@ -179,6 +180,8 @@ li {
   opacity: 1;
   transform: translateX(0);
 }
+
+*/
 
 #home-container {
   height: 100px;
@@ -308,7 +311,7 @@ nav li a:hover {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #509e53;
   color: white;
   padding: 15px 30px;
   border: none;

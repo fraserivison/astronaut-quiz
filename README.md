@@ -40,15 +40,15 @@ Balsamiq wireframes was used as a tool for meticulously planning out the mobile 
 
 ### Colours
 Main colours:
-* background color: rgb(134, 223, 255, 0.4);
-* font color: #6217ee#3c3939;
-* text-shadow: #c6c4c4;
-* border-top: #c6c4c4;
+* background color: #000
+* font color: white;
+* button: #4CAF50;
+* navigation bar: rgba(51, 51, 51, 0.9);
 
 ### Fonts 
 Main fonts:
-* font-family: 'Rubik', sans-serif;
-* font-family: 'Chelsea Market', sans-serif;
+* font-family: 'Space Mono', monospace;
+* font-family: 'Trebuchet MS', sans-serif;
 
 
 ## Features

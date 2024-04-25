@@ -52,17 +52,21 @@ Main fonts:
 
 
 ## Features
-Splash Page to gain users name to perosnal touch and then name is used throughout website
-
-Nav bar to jumps to h2 elements and it also stays on the screen- maybe gets larger when hovered over?
 
 ### Intro
+The introduction page, index.html, serves as the gateway to a personalised digital experience by inviting users to input their names. This simple yet crucial interaction sets the stage for a more tailored journey throughout the website. By capturing the user's name, the website can dynamically personalise content adding a warm and welcoming touch to the overall experience. The introduction page not only collects user information but also sets the tone for a personalised and user-centric experience.
 
-### Fun facts
+### Navigation Bar
+The navigation bar plays a pivotal role in enhancing user experience by providing seamless access to different sections of the page, home.html. With its intuitive design, users can effortlessly navigate through the content by simply clicking on the desired section in the navigation menu. What makes this navigation bar particularly user-friendly is its ability to stay fixed at the top of the page as the user scrolls down. This ensures that regardless of where the user is on the page, the navigation options remain readily accessible, eliminating the need for excessive scrolling or searching. By facilitating quick jumps to different sections, the navigation bar streamlines the browsing experience, allowing users to explore the website's content with ease and efficiency. 
+
+### Fun Facts
+The facts section of the website gives the user some great information about the wonders of the universe, enriched with visually engaging images that bring each fact to life. Combining intriguing insights with stunning visuals, this section offers a multimedia experience that captivates and educates visitors. Each fact is accompanied by an illustrative image, providing a vivid depiction of the cosmic wonders being discussed.
 
 ### History
+The human history of space section on the website offers a compelling narrative of humanity's ambitious quest to explore the cosmos. Through text and imagery, visitors are transported back in time to witness the triumphs and challenges of humanity's journey beyond the confines of our planet.
 
 ### Hall of Fame
+The Hall of Fame section on the website pays tribute to the iconic figures who have transcended the bounds of Earth's atmosphere. As users navigate through this virtual gallery of space pioneers, they are reminded of the profound impact of these visionaries on our collective understanding of the cosmos and the enduring legacy they leave for future generations.
 
 ### Quiz
 

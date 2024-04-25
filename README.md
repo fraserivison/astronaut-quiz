@@ -69,28 +69,40 @@ The human history of space section on the website offers a compelling narrative 
 The Hall of Fame section on the website pays tribute to the iconic figures who have transcended the bounds of Earth's atmosphere. As users navigate through this virtual gallery of space pioneers, they are reminded of the profound impact of these visionaries on our collective understanding of the cosmos and the enduring legacy they leave for future generations.
 
 ### Quiz
-
-Will redirect to 'application page' upon success of the quiz or back to home page to read up on information again.
-
+At the bottom of the home page (home.html) there is a button which leads to an engaging and interactive quiz, inviting users to put their newfound knowledge to the test. Drawing from the information provided throughout the page, the quiz offers a series of thought-provoking questions that challenge users to recall key facts and insights about space exploration. Encouraging careful reading and comprehension, each question serves as a gateway to deeper understanding and exploration. As users navigate through the quiz, their answers are recorded, culminating in a final score that reflects their comprehension and retention of the material. Depending on their performance (7/10 or more is a pass, anything less they will have to try again), users are presented with tailored outcomes, guiding them towards further engagement with the site. Whether it's progressing to an "application" page to explore opportunities in space exploration or revisiting the home page to reinforce their understanding, the quiz offers an immersive and rewarding experience for users eager to embark on a cosmic journey.
 
 ## Features Left to Implement
-Timeline of history of universe
-Current location of ISS, hubble and james webb telescope 
+
+### Timeline of the History of the Universe
+A feature that could enrich the user experience down the line is a "Timeline of the History of the Universe." This feature aims to provide users with a dynamic and visually captivating overview of key milestones in the cosmic journey, from the Big Bang to the present day. Functionality-wise, the timeline would be interactive, allowing users to explore significant events through clickable markers or scrolling. Each marker on the timeline would represent a pivotal moment in cosmic history, accompanied by engaging multimedia content such as images, videos, and descriptive text. Users can navigate the timeline at their own pace, gaining a deeper understanding of the unfolding story of the universe. This feature not only educates users about the scientific narrative of cosmic evolution but also immerses them in a fascinating journey through time and space.
 
 ## Technologies Used
 
-### HTML 5 and CSS:
+### HTML 5 and CSS
+HTML5 and CSS are utilised extensively to create a visually engaging and interactive website. HTML5 is employed to structure the content, with semantic elements like <header>, <nav>, <main> and <section>, organising the layout effectively. These elements provide clarity and improve accessibility for both users and search engines.
 
-### Google Fonts:
+CSS is employed to style the HTML elements, ensuring a cohesive and aesthetically pleasing presentation across the website. Stylesheets define the color scheme, typography, spacing, and layout, creating a consistent visual identity. Advanced CSS features like flexbox and grid layout are used to achieve responsive design, allowing the website to adapt seamlessly to different screen sizes and orientations.
 
-### Font Awesome:
+Additionally, CSS animations and transitions are applied to enhance user experience and add subtle visual cues. Media queries are utilised to implement responsive design, optimising the layout for various devices and screen resolutions. 
 
+Overall, HTML5 and CSS are fundamental tools in this project, facilitating the creation of a well-structured, visually appealing, and responsive website that effectively communicates its content and engages users.
 
-### Balsamiq Wireframes:
+### Google Fonts
+Google Fonts provides a vast library of free and open-source fonts that can be easily integrated into web projects. In this website, Google Fonts were used to enhance typographic choices and elevate the visual appeal of the content. By selecting appropriate fonts that complement the overall design aesthetic, Google Fonts contribute to creating a cohesive and professional-looking website. The chosen fonts not only improve readability but also add personality and style to the text, helping to convey the intended message effectively. Leveraging Google Fonts also ensures cross-platform compatibility and fast loading times, enhancing the user experience across different devices and browsers.
+
+### Font Awesome
+Font Awesome offers a comprehensive collection of scalable vector icons that can be seamlessly incorporated into web projects. In this website, Font Awesome icons were employed to enhance visual elements and provide intuitive cues for user interactions. These icons not only enhance the aesthetic appeal of the website but also improve usability by making it easier for users to navigate and understand the content.
+
+### Balsamiq Wireframes
+Balsamiq wireframes served as a crucial planning tool for designing the mobile and desktop layouts of this project. Leveraging Balsamiq's intuitive interface, wireframes were created to visualise the website's structure, navigation flow, and content placement across different screen sizes. By sketching out wireframes, it became easier to iterate and refine the design, ensuring a user-friendly experience on both mobile devices and desktop browsers.
 
 ### Gitpod and Github:
+Gitpod and GitHub were instrumental in the development and collaboration process of this project. Gitpod provided a cloud-based integrated development environment (IDE) that enabled work to be done on the codebase from anywhere with an internet connection. With Gitpod's pre-configured development environments, setting up the project was quick and hassle-free, allowing developers to focus on writing code rather than configuring their development environment. Additionally, Gitpod's collaboration features, such as real-time editing and sharing workspaces, facilitated smooth collaboration among team members, enabling them to work together on the same codebase simultaneously.
+
+GitHub, on the other hand, served as the central repository for the project, hosting the codebase and version control system. Leveraging GitHub's version control capabilities, developers were able to track changes, manage revisions, and coordinate contributions from multiple collaborators seamlessly. The use of branches, pull requests, and code reviews facilitated a structured development workflow, ensuring that changes were reviewed and integrated into the codebase efficiently. Moreover, GitHub's issue tracking system enabled developers to report bugs, suggest features, and manage tasks effectively, fostering a transparent and organized development process. Overall, Gitpod and GitHub provided a robust and efficient platform for developing, collaborating, and managing the project, contributing to its successful execution and delivery.
 
 ### Lighthouse
+Lighthouse testing on Google Chrome played a crucial role in ensuring the performance, accessibility, and overall quality of the project. By running Lighthouse audits directly within the Chrome browser, developers were able to assess various aspects of the website, including performance metrics such as page load speed, accessibility features to ensure the site was usable by all users, best practices for web development standards, and search engine optimization (SEO) factors.
 
 ## Testing
 

@@ -77,24 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const textToType = `<span>So <span class="userGreeting">${userName}</span>, you want to be an Astronaut?</span>`;
         typeText(textToType);
     }
-
-    function typeText(textToType) {
-        if (index <= textToType.length) {
-            element.innerHTML = textToType.substring(0, index) + `<span id="cursor">|</span>`;
-            index++;
-            const typingSpeed = Math.floor(Math.random() * (100 - 25 + 1)) + 25; // Decreased range for faster typing
-            setTimeout(() => typeText(textToType), typingSpeed);
-        } else {
-            blinkCursor();
-        }
-    }
-
-    function blinkCursor() {
-        const cursor = document.getElementById("cursor");
-        setInterval(() => {
-            cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
-        }, 300); // Adjusted blink speed
-    }
 });
 
 // Heading and paragraph animations when scrolled to

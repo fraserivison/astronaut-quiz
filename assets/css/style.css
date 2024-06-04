@@ -90,8 +90,32 @@ button[type="submit"] {
 
 
 .button-link {
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 2px solid #fff;
+  background-color: #509e53;
+  color: #fff;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px;
+  font-family: 'Space Mono', monospace;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   text-decoration: none;
+  text-transform: uppercase;
 }
+
+.button-link .fa-shuttle-space {
+  margin-right: 8px;
+}
+
+.button-link:hover {
+  background-color: #386b39;
+}
+
 
 .button-text {
   text-decoration: none;
@@ -104,7 +128,7 @@ input::placeholder {
 }
 
 button[type="submit"]:hover {
-  background-color: #19eb1d;
+  background-color: #386b39;
 }
 
 /* Main Page and Styling */
@@ -433,7 +457,7 @@ button:active {
 
   h1,
   h2 {
-    margin: 20px 0;
+    margin: 50px 0;
     font-size: 3em;
   }
 

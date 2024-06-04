@@ -137,6 +137,8 @@ Overall, the testing phase played a crucial role in delivering a high-quality, r
 ### HTML:
 ![HTML Validator Test](md_images/html.png)
 
+During the testing phase, each HTML file was validated using the W3C HTML Validator. This process involved passing each file through the validator to identify any syntax errors or issues. All flagged errors and warnings were systematically addressed and corrected, ensuring that the HTML code adheres to the latest web standards. This validation step was crucial in maintaining the integrity and performance of the website, leading to clean, well-structured, and error-free HTML files.
+
 ### CSS:
 ![CSS Validator Test](md_images/css.png)
 

@@ -186,6 +186,23 @@ Across both mobile and desktop platforms, each page of the website exhibited con
 ## Bugs
 During deployment and throughout the testing and development phases, a few bugs surfaced, as is common in any project. However, diligent debugging and troubleshooting efforts were undertaken, leading to their successful resolution. These bugs ranged from minor styling inconsistencies to more significant issues affecting functionality. Through thorough testing and careful attention to detail, the bugs were effectively fixed, resulting in a more robust and polished final product.
 
+### Bugs Encountered During Development
+
+1. **Navigation Bar Styling Issue**: On smaller screen sizes, the navigation bar was not displaying correctly, causing layout inconsistencies. This was resolved by adjusting the CSS styles to ensure proper alignment and responsiveness.
+
+2. **Quiz Score Calculation Error**: There was a logic error in the JavaScript code responsible for calculating the quiz score, resulting in incorrect score calculations. This issue was fixed by debugging the code and refining the logic to accurately tally the user's score.
+
+3. **Responsive Design Glitch**: Certain elements on the home page were not resizing properly on mobile devices, leading to display issues. This was rectified by implementing additional CSS rules to improve responsiveness and adaptability across different screen sizes.
+
+4. **LocalStorage Data Persistence**: There was an issue with data persistence in localStorage, causing user input to be lost upon page refresh. This was resolved by revising the code to ensure that user data is properly stored and retrieved from localStorage.
+
+5. **Layout Inconsistencies**: Minor layout inconsistencies were observed across various pages of the website, particularly with regard to spacing and alignment. These issues were addressed by fine-tuning the CSS styles to achieve a more consistent and polished layout.
+
+6. **Quiz Result Display**: There was a bug in the JavaScript code responsible for displaying quiz results, resulting in incorrect outcome messages being shown to users. This issue was fixed by refining the logic to accurately determine the user's performance and display the corresponding message.
+
+By identifying and addressing these bugs in a timely manner, the development team was able to ensure the stability and functionality of the website, delivering a seamless user experience across different devices and environments.
+
+
 ## Deployment
 The deployment process for the website on GitHub Pages followed these step-by-step instructions:
 

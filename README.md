@@ -15,6 +15,7 @@
 - [Features Left to Implement](#features-left-to-implement)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
+    - [Testing Details](#testing-details)
     - [Validator Testing](#validator-testing)
     - [Performance](#performance)
     - [Bugs](#bugs)
@@ -131,6 +132,23 @@ For layout inconsistencies, adjustments were made to CSS stylesheets to ensure c
 Additionally, automated testing scripts were implemented using testing frameworks to streamline the testing process and ensure consistent behavior across different environments. These scripts helped identify potential issues early in the development cycle, enabling faster resolution and reducing the likelihood of regressions in subsequent iterations.
 
 Overall, the testing phase played a crucial role in delivering a high-quality, robust website that meets the needs of users across various devices and environments. It allowed for thorough validation of features, identification of potential issues, and iterative refinement to achieve optimal performance and user satisfaction.
+
+### Testing Details
+
+| Page          | Test Description                             | Passed (✓) / Failed (✗) |
+|---------------|----------------------------------------------|-------------------------|
+| index.html    | Name Input Validation                        | ✓                       |
+| index.html    | LocalStorage Functionality                   | ✓                       |
+| home.html     | Navigation Bar Functionality                 | ✓                       |
+| home.html     | Fun Facts Display                            | ✓                       |
+| home.html     | History Section Display                      | ✓                       |
+| home.html     | Hall of Fame Display                         | ✓                       |
+| home.html     | Quiz Button Functionality                    | ✓                       |
+| quiz.html     | Quiz Questions Display                       | ✓                       |
+| quiz.html     | User Answer Submission                       | ✓                       |
+| quiz.html     | Score Calculation                            | ✓                       |
+| quiz.html     | Result Display                               | ✓                       |
+
 
 ### Validator Testing
 

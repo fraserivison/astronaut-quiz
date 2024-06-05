@@ -19,6 +19,7 @@
     - [Validator Testing](#validator-testing)
     - [Performance](#performance)
     - [Bugs](#bugs)
+        - [Bugs Encountered During Development](#bugs-encountered-during-development)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -187,7 +188,6 @@ Across both mobile and desktop platforms, each page of the website exhibited con
 During deployment and throughout the testing and development phases, a few bugs surfaced, as is common in any project. However, diligent debugging and troubleshooting efforts were undertaken, leading to their successful resolution. These bugs ranged from minor styling inconsistencies to more significant issues affecting functionality. Through thorough testing and careful attention to detail, the bugs were effectively fixed, resulting in a more robust and polished final product.
 
 ### Bugs Encountered During Development
-
 1. **Navigation Bar Styling Issue**: On smaller screen sizes, the navigation bar was not displaying correctly, causing layout inconsistencies. This was resolved by adjusting the CSS styles to ensure proper alignment and responsiveness.
 
 2. **Quiz Score Calculation Error**: There was a logic error in the JavaScript code responsible for calculating the quiz score, resulting in incorrect score calculations. This issue was fixed by debugging the code and refining the logic to accurately tally the user's score.

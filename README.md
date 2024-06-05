@@ -215,8 +215,6 @@ The content of the website was created to provide users with accurate and engagi
 ### Code
 [404.html Template](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
 
-[Space Background on index.html and quiz.html](https://codepen.io/wheresdara/pen/wvXBpwa)
-
 [Background Image](https://www.youtube.com/watch?v=_oFWg_NlKdo)
 
 ## End.

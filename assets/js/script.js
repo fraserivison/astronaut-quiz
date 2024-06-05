@@ -1,17 +1,4 @@
 // jshint esversion: 6
-// code from https://codepen.io/wheresdara/pen/wvXBpwa
-// moving star background
-function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-const STAR_COUNT = 400;
-let result = "";
-for (let i = 0; i < STAR_COUNT; i++) {
-    result += `${randomNumber(-100, 100)}vw ${randomNumber(-100, 100)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`;
-}
-console.log(result.substring(0, result.length - 1));
-
 // index.html
 document.addEventListener("DOMContentLoaded", function () {
     let form = document.getElementById("name");
@@ -217,4 +204,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showQuestion();
 });
-

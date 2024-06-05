@@ -72,11 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let index = 0;
 
     let userName = localStorage.getItem("username") || "";
-
-    if (userName) {
-        const textToType = `<span>So <span class="userGreeting">${userName}</span>, you want to be an Astronaut?</span>`;
-        typeText(textToType);
-    }
 });
 
 // Heading and paragraph animations when scrolled to

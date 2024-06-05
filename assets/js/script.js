@@ -18,12 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (form) {
         form.addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent form submission
-
             let userName = document.getElementById("username").value;
-
             // Store the username in localStorage for future use
             localStorage.setItem("username", userName);
-
             // Redirect to home.html
             window.location.href = "home.html";
         });
@@ -35,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Retrieve the username from local storage
     let username = localStorage.getItem("username");
-
     // Set the username as the text content of the span element
     document.querySelectorAll(".username").forEach(element => {
         element.textContent = username;
@@ -55,14 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-
-        window.scrollTo({
-            top: targetElement.offsetTop - 70, // Adjusted offset for the fixed navbar
-            behavior: 'smooth'
-        });
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 70, // Adjusted offset for the fixed navbar
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -106,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // quiz.html
 document.addEventListener("DOMContentLoaded", function () {
-    const spaceQuiz = [
+    let spaceQuiz = [
         {
             question: "What is the approximate diameter of the observable universe?",
             options: ["93 million light-years", "93 billion light-years", "93 trillion light-years", "930 billion light-years"],
@@ -158,8 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
             answer: "85%"
         }
     ]
-        ;
-
+    
     const questionElement = document.getElementById("question");
     const optionsElement = document.getElementById("options");
 
@@ -222,3 +217,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showQuestion();
 });
+

@@ -155,8 +155,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ]
     
-    const questionElement = document.getElementById("question");
-    const optionsElement = document.getElementById("options");
+    let questionElement = document.getElementById("question");
+    let optionsElement = document.getElementById("options");
 
     let currentQuestion = 0;
     let score = 0;

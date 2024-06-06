@@ -1,3 +1,4 @@
+// jshint esversion: 6
 // quiz.html
 const spaceQuiz = [
     {
@@ -50,7 +51,7 @@ const spaceQuiz = [
         options: ["50%", "65%", "85%", "100%"],
         answer: "85%"
     }
-]
+];
 
 let questionElement = document.getElementById("question");
 let optionsElement = document.getElementById("options");

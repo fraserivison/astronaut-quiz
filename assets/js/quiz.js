@@ -1,5 +1,6 @@
 // jshint esversion: 6
-// quiz.html
+
+// Define the quiz questions, options, and correct answers
 const spaceQuiz = [
     {
         question: "What is the approximate diameter of the observable universe?",
@@ -53,12 +54,14 @@ const spaceQuiz = [
     }
 ];
 
+// Select HTML elements for displaying questions and options
 let questionElement = document.getElementById("question");
 let optionsElement = document.getElementById("options");
 
 let currentQuestion = 0;
 let score = 0;
 
+// Function to display the current question and its options
 function showQuestion() {
     const question = spaceQuiz[currentQuestion];
     questionElement.innerText = question.question;
@@ -72,14 +75,17 @@ function showQuestion() {
     });
 }
 
+// Function to handle the selection of an answer
 function selectAnswer(e) {
     const selectedButton = e.target;
     const answer = spaceQuiz[currentQuestion].answer.trim().toLowerCase();
 
+    // Check if the selected answer is correct and update the score
     if (selectedButton.innerText.trim().toLowerCase() === answer) {
         score++;
     }
 
+    // Move to the next question or show the result if all questions have been answered
     currentQuestion++;
 
     if (currentQuestion < spaceQuiz.length) {
@@ -89,10 +95,12 @@ function selectAnswer(e) {
     }
 }
 
+// Function to display the quiz result
 function showResult() {
     let resultText, linkText, linkHref;
     let userName = localStorage.getItem("username") || "";
 
+    // Determine the result message and link based on the score
     if (score >= 7) {
         resultText = `Congratulations <span class="userGreeting">${userName}</span>, you've got what it takes to become an astronaut!`;
         linkText = "Apply Now"; // Text for the link
@@ -103,6 +111,7 @@ function showResult() {
         linkHref = "home.html";
     }
 
+    // Display the quiz completion message with score and result
     const quiz = document.getElementById("quiz");
     quiz.innerHTML = `
         <h1>Quiz Completed!</h1>
@@ -113,6 +122,7 @@ function showResult() {
         <a href="${linkHref}" style="background-color: #4CAF50; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8em; margin-top: 20px; text-transform: uppercase; font-family: monospace; text-decoration: none;">${linkText}</a>`;
 }
 
+// Initialise the quiz by displaying the first question when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", function () {
     showQuestion();
 

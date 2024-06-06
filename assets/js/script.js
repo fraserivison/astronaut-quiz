@@ -1,93 +1,6 @@
 // jshint esversion: 6
-// index.html
-document.addEventListener("DOMContentLoaded", function () {
-    let form = document.getElementById("name");
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent form submission
-            let userName = document.getElementById("username").value;
-            // Store the username in localStorage for future use
-            localStorage.setItem("username", userName);
-            // Redirect to home.html
-            window.location.href = "home.html";
-        });
-    }
 
-    // Preload main image on home.html
-    const image = new Image();
-    image.src = "assets/images/astronaut.jpeg";
-
-    // Retrieve the username from local storage
-    let username = localStorage.getItem("username");
-    // Set the username as the text content of the span element
-    document.querySelectorAll(".username").forEach(element => {
-        element.textContent = username;
-    });
-
-    // Apply specific styles to .username only on index.html
-    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
-        document.querySelectorAll(".username").forEach(element => {
-            element.style.border = "2px solid #fff";
-            element.style.padding = "10px";
-        });
-    }
-});
-
-// home.html 
-
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 70, // Adjusted offset for the fixed navbar
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// Main Heading with username added in
-document.addEventListener("DOMContentLoaded", function () {
-    let element = document.getElementById("home");
-    let index = 0;
-
-    let userName = localStorage.getItem("username") || "";
-});
-
-// Heading and paragraph animations when scrolled to
-document.addEventListener("DOMContentLoaded", function () {
-    const fadeElements = document.querySelectorAll('.fade-in');
-    const slideElements = document.querySelectorAll('.slide-in');
-
-    function checkAnimations() {
-        fadeElements.forEach((element) => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-
-            if (elementTop < windowHeight * 0.9) {
-                element.classList.add('active');
-            }
-        });
-
-        slideElements.forEach((element) => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-
-            if (elementTop < windowHeight * 0.9) {
-                element.classList.add('active');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', checkAnimations);
-    checkAnimations();
-});
-
-
-// quiz.html
+// Main Quiz
 document.addEventListener("DOMContentLoaded", function () {
     let spaceQuiz = [
         {
@@ -141,66 +54,88 @@ document.addEventListener("DOMContentLoaded", function () {
             answer: "85%"
         }
     ]
-    
-    let questionElement = document.getElementById("question");
-    let optionsElement = document.getElementById("options");
-
-    let currentQuestion = 0;
-    let score = 0;
-
-    function showQuestion() {
-        const question = spaceQuiz[currentQuestion];
-        questionElement.innerText = question.question;
-
-        optionsElement.innerHTML = "";
-        question.options.forEach(option => {
-            const button = document.createElement("button");
-            button.innerText = option;
-            optionsElement.appendChild(button);
-            button.addEventListener("click", selectAnswer);
+// index.html
+    let form = document.getElementById("name");
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            let userName = document.getElementById("username").value;
+            // Store the username in localStorage for future use
+            localStorage.setItem("username", userName);
+            // Redirect to home.html
+            window.location.href = "home.html";
         });
     }
 
-    function selectAnswer(e) {
-        const selectedButton = e.target;
-        const answer = spaceQuiz[currentQuestion].answer.trim().toLowerCase();
+    // Preload main image on home.html
+    const image = new Image();
+    image.src = "assets/images/astronaut.jpeg";
 
-        if (selectedButton.innerText.trim().toLowerCase() === answer) {
-            score++;
-        }
+    // Retrieve the username from local storage
+    let username = localStorage.getItem("username");
+    // Set the username as the text content of the span element
+    document.querySelectorAll(".username").forEach(element => {
+        element.textContent = username;
+    });
 
-        currentQuestion++;
-
-        if (currentQuestion < spaceQuiz.length) {
-            showQuestion();
-        } else {
-            showResult();
-        }
+    // Apply specific styles to .username only on index.html
+    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+        document.querySelectorAll(".username").forEach(element => {
+            element.style.border = "2px solid #fff";
+            element.style.padding = "10px";
+        });
     }
-
-    function showResult() {
-        let resultText, linkText, linkHref;
-        let userName = localStorage.getItem("username") || "";
-
-        if (score >= 7) {
-            resultText = `Congratulations <span class="userGreeting">${userName}</span>, you've got what it takes to become an astronaut!`;
-            linkText = "Apply Now"; // Text for the link
-            linkHref = "apply.html"; // Redirect to the home section of the same page
-        } else {
-            resultText = `Sorry <span class="userGreeting">${userName}</span>, not this time, but try again soon.`;
-            linkText = "Back to Home"; // Text for the link
-            linkHref = "home.html";
-        }
-
-        const quiz = document.getElementById("quiz");
-        quiz.innerHTML = `
-            <h1>Quiz Completed!</h1>
-            <p style="font-family: 'Space Mono', monospace; ">Score: ${score}/${spaceQuiz.length}</p>
-            <p style="font-family: 'Space Mono', monospace; ">${resultText}</p>
-            <br>
-            <br>
-            <a href="${linkHref}" style="background-color: #4CAF50; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8em; margin-top: 20px; text-transform: uppercase; font-family: monospace; text-decoration: none;">${linkText}</a>`;
-    }
-
-    showQuestion();
 });
+
+    let element = document.getElementById("home");
+    let index = 0;
+
+    let userName = localStorage.getItem("username") || "";
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const slideElements = document.querySelectorAll('.slide-in');
+
+    function checkAnimations() {
+        fadeElements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementTop < windowHeight * 0.9) {
+                element.classList.add('active');
+            }
+        });
+
+        slideElements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementTop < windowHeight * 0.9) {
+                element.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkAnimations);
+    checkAnimations();
+
+// home.html 
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70, // Adjusted offset for the fixed navbar
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    
+    
+
+        
+
+    

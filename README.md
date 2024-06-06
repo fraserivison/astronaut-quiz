@@ -154,14 +154,20 @@ Overall, the testing phase played a crucial role in delivering a high-quality, r
 ### Validator Testing
 
 ### HTML:
-![HTML Validator Test](md_images/html.png)
-
 During the testing phase, each HTML file was validated using the W3C HTML Validator. This process involved passing each file through the validator to identify any syntax errors or issues. All flagged errors and warnings were systematically addressed and corrected, ensuring that the HTML code adheres to the latest web standards. This validation step was crucial in maintaining the integrity and performance of the website, leading to clean, well-structured, and error-free HTML files.
 
+![HTML Validator Test](md_images/html.png)
+
 ### CSS:
+
+The W3C Validation Service was employed to verify the quality and correctness of the CSS code utilised in this project. Following a comprehensive validation process, it is confirmed that no errors were detected. This validation underscores the commitment to maintaining standards-compliant and error-free code, contributing to a seamless and reliable user experience.
+
 ![CSS Validator Test](md_images/css.png)
 
 ### Javascript:
+
+To ensure the robustness and quality of the JavaScript code within this project, the JSHint tool was employed for validation for **script.js** and **quiz.js**. By adhering to JSHint's guidelines and recommendations, the JavaScript code was thoroughly examined for potential errors, stylistic inconsistencies, and best practices. This rigorous validation process helps maintain code integrity, enhances readability, and promotes better overall code quality.
+
 ![Javascript Validator Test](md_images/js.png)
 
 

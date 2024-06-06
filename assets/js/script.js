@@ -35,11 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-    let element = document.getElementById("home");
-    let index = 0;
-
-    let userName = localStorage.getItem("username") || "";
-
     const fadeElements = document.querySelectorAll('.fade-in');
     const slideElements = document.querySelectorAll('.slide-in');
 
